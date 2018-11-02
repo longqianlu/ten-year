@@ -1,0 +1,38 @@
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/*背景透明度*/
+.bg-mask{
+    background:rgba(0,0,0,.4);
+    width:100%;
+    height:100%;
+}
+/*font-size*/
+.small_text{
+    font-size:13px;
+}
+.bg-text{
+    font-size: 20px;
+}
+.list-text{
+    font-size:18px;
+}
+.middle_text{
+    font-size:26px;
+}
+.big_text{
+    font-size: 53px;
+}
+/*color*/
+.gray{
+    color:#ddd;
+}
+
+.ty_color{
+    color:#55D4FD !important;
+}
+/*a标签去掉样式*/
+
+.text-none{
+    text-decoration: none;
+}

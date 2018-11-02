@@ -1,0 +1,520 @@
+*{
+    padding:0;
+    margin:0;
+    text-align: center;
+    /*overflow: hidden;*/
+    box-sizing:border-box;
+}
+/*主页第一个div:登录页背景图*/
+#ty-index-login{
+    background-image: url(../img/index/login_bg.jpg);
+    background-size:100% 100%;
+    width:100%;
+    min-height:100%;
+    background-repeat:no-repeat;
+}
+/*登录页透明度*/
+.ty-index-login-content{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.4);
+}
+/*logo图片*/
+.img-logo{
+    width:135px;
+    height:36px;
+    margin-left: 10px;
+}
+/*注册按钮*/
+.btn{
+    width:80px;
+    margin:20px 80px;
+}
+/*关于我们*/
+.ty-login-about{
+    margin:50px 15px;
+}
+/*注册按钮hover样式*/
+.ty-reg-btn:hover{
+    background: #00b4ff !important;
+    border-color:#00b4ff !important;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+/*登录页大标题*/
+.ty-login-world{
+    letter-spacing:4px;
+}
+.ty-login-text{
+    padding:350px 0 100px 0;
+}
+/*进入登录——启梦*/
+#open-ty{
+    width:100px;
+    height:100px;
+    border:3px solid #00b4ff;
+    border-radius: 50%;
+    background-image:radial-gradient(
+				100px at 20% 5%,#00b4ff 0px,pink 50%,#00b4ff);
+    color:#fff;
+}
+#open-ty:hover{
+    background-image:radial-gradient(
+                100px at 80% 90%,#00b4ff 0px,pink 50%,#00b4ff);
+    color:#fff;
+}
+#ty-login-cover{ 
+	/*底层遮罩元素*/
+    position:absolute;/*元素的定位类型*/
+	left:0px;
+	top:0px;
+    background:rgba(0, 0, 0, 0.4);
+    width:100%;  /*宽度设置为100%，这样才能使隐藏背景层覆盖原页面*/
+    height:100%;
+    opacity:0.6;/*透明度*/
+    display:none; /**/
+    z-Index:999;  /*层级关系*/
+}
+#ty-login-modal{ 
+    position:absolute;
+    width:500px;
+    height:262px;
+    border-radius: 30px;
+    top: 25%;
+    left:-180px;
+    background-image: url(../img/index/IMG_4074.JPG);
+    background-size:100% 100%;
+    display:none;
+    z-Index:9999;  
+}
+/*登录页面输入框*/
+.input-text{
+    max-width: 250px;
+    background:transparent;
+    border-radius:10px;
+}
+/*忘记密码*/
+.password-content{
+    margin-left: 130px;
+    line-height: 20px;
+}
+/*登录按钮*/
+.ty-login-btn{
+    border-radius:10px;
+    background:transparent;
+    border:1px solid #eff;
+    color:#fff;
+}
+#ty-close{
+    position:absolute;
+    left:50%;
+    top:0px;
+}
+/*登录按钮定位*/
+#open-ty-btn{
+    position:absolute;
+    left:45%;
+    top:250px;
+}
+
+/*主页第二个div:时间表背景图*/
+#ty-timeline{
+    background-image: url(../img/index/login_timeline_bg.jpg);
+    background-size: 100% 100%;
+    width:100%;
+    height:100%;
+    position: relative;
+}
+/*时间表内容*/
+.timeline-content{
+    width:100%;
+    height:100%;
+}
+/*时间表日历*/
+.ty-timeline-date{
+    width:80px;
+    height:80px;
+    background:#55D4FD;
+    margin-bottom: 200px;
+    padding:15px 0;
+    font-size: 15px;
+    vertical-align: top;
+    margin-right: 30px;
+}
+.ty-timeline-date-year{
+    width:50px;
+    margin:10px auto 10px;
+    font-size: 19px;
+    letter-spacing: 2px;
+}
+.ty-timeline-date-month{
+    width:50px;
+    font-size: 13px;
+}
+/*时间表内容——标题*/
+.timeline-content-title{
+    font-size: 45px;
+}
+.timeline-content-at{
+    font-size: 18px;
+}
+/*轮播图定位*/
+.carousel-text{
+    padding: 100px;
+}
+/*左右轮播图按钮*/
+.ty-timeline-content-arrow{
+    width:45px;
+    height:50px;
+}
+/*时间轴透明层*/
+.timenav{
+    background-color:rgba(0,0,0,0.4);
+    width:100%;
+    height:228px;
+    bottom:0px;
+    position:relative;
+}
+/*时间轴轴针*/
+.timenav ul li{
+    border-left:1px solid #787879;
+    float:right;
+    height:175px;
+}
+.timenav-text{
+    height:38px;
+    width:138px;
+    position:absolute;
+    left:700px;
+    top:68px;
+    background: #1F7F9E;
+    border:1px solid #1F7F9E;
+    border-radius:3px;
+}
+/*轴针距离*/
+.timenav ul li:nth-child(1){
+    margin-right: 380px;
+}
+.timenav ul li:nth-child(2){
+    margin-right: 163px;
+}
+.timenav ul li:nth-child(3){
+    margin-right: 110px;
+}
+.timenav ul li:nth-child(4){
+    margin-right: 110px;
+    border-left:1px solid #00b4ff;
+}
+.timenav ul li:nth-child(5){
+    border-left:3px solid #00b4ff;
+    margin-right: -9px;
+}
+/*已激活的时间轴针倒三角*/
+.triangle{
+    margin-left:-4px;
+    border:8px solid transparent;
+    border-top-color:#fff;
+    position:absolute;
+}
+/*时间轴已激活事件*/
+.timenav-active{
+    background:#00b4ff;
+    position:absolute;
+}
+/*时间轴激活事件和小三角*/
+.text_line{
+    width:0;
+    height:0;
+    border:4px solid transparent;
+    border-right-color:#1F7F9E;
+    position:absolute;
+    left:692px;
+    top:75px;
+}
+.active{
+    border-right-color:#00b4ff !important;
+}
+/*时间轴事件获取焦点——小三角和事件*/
+.timenav-hover:hover div:first-child{
+    border-right-color:#00b4ff;
+    background:linear-gradient(#55D4FD,#01B2EC );
+}
+.timenav-hover:hover div:last-child{
+    background:linear-gradient(#55D4FD,#01B2EC );
+    border:0;
+}
+.timenav>div:nth-child(2){
+    position:absolute;
+    left:800px;
+}
+.timenav>div:nth-child(3){
+    position:absolute;
+    left:255px;
+    top:50px;
+}
+.timenav>div:nth-child(4){
+    position:absolute;
+    left:340px;
+    top:-50px;
+}
+.timenav>div:nth-child(5){
+    position:absolute;
+    left:230px;
+}
+.timenav>div:nth-child(6){
+    position:absolute;
+    left:105px;
+    top:-10px;
+}
+/*时间轴事件字体颜色*/
+.timenav-text span{
+    color:#FDFFFF;
+}
+/*单独定义时间轴第三个事件*/
+.my_top{
+    margin-top: -50px;
+    margin-left:250px;
+}
+.timenav-active{
+    background:#00b4ff;
+    border:1px solid #00b4ff;
+}
+/*时间轴已激活轴针*/
+.tri-parent{
+    width:18px;
+    position:absolute;
+    left:50%;
+    top:0px;
+}
+.triangle-line{
+    border:2px solid #00b4ff;
+    height:170px;
+    margin-left:2px;
+    position:absolute;
+    top:8px;
+}
+/*时间刻度表*/
+.ty-timescale{
+    background-color:#fff;
+    position:absolute;
+    width:100%;
+    height:55px;
+    bottom:0px;
+}
+/*时间刻度位置分布*/
+.ty-timescale p:not(:last-child){
+    margin-right: 173px;
+}
+.ty-timescale p:last-child{
+    margin-right: 55px;
+}
+/*时间刻度字体样式*/
+.ty-timescale p{
+    font-size: 12px;
+    margin-top:15px;
+    color:#666666;
+}
+/*时间刻度已激活的时间*/
+.ty-timescale p.active{
+    margin-top: 23px;
+    color:#333333;
+}
+/*主页第三个大背景图*/
+.ty-with-content{
+    background-image: url(../img/index/login_expore_bg.jpg);
+    background-size: 100% 100%;
+    width:100%;
+    height:695px;
+    position:relative;
+}
+
+
+
+
+/*三：大图内容*/
+.ty-with-block{
+    font-size: 70px;
+    position:absolute;
+    top: 200px;
+    left:450px;
+}
+.ty-with-block-line{
+    font-size: 48px;
+    position:absolute;
+    left:515px;
+    top:330px;
+}
+/*大标题文字*/
+.ty-with-content>p{
+    border:2px solid #fff;
+    width:120px;
+    left:675px;
+    top:400px;
+    position:absolute;
+}
+/*小文字链接*/
+.ty-with-block-line ul li a{
+    text-decoration: none;
+    font-size:42px;
+}
+/*链接轮播*/
+.ty-with-block-line ul li:not(:first-child){
+    display: none;
+}
+
+
+
+
+/*四：大背景图*/
+.ty-about{
+    width:100%;
+    position:relative;
+}
+.ty-about-bg{
+    width:100%;
+    height:600px;
+    display: block;
+    position: relative;
+    background-image: url(../img/index/ty_login_channel.jpg);
+    background-size:100% 100% ;
+    z-index: 10;
+}
+/*第一行四张图片*/
+.ty-about-size{
+    width:1020px;
+    top:50px;
+    position:absolute;
+    left:50%;
+    margin-left: -500px;
+    z-index: 20;
+}
+/*第二行四张图片*/
+.ty-expro-size{
+    width:1020px;
+    top:200px;
+    position:absolute;
+    left:50%;
+    margin-left: -500px;
+}
+.ty-about-bg>div:nth-child(2){
+    top:200px;
+}
+/*八张图片尺寸*/
+.ty-about-img{
+    width: 230px;
+    height:130px;
+    border-radius:5px;
+    display:block;
+    position:relative;
+    overflow: hidden;
+    margin:10px;
+    background-size: 100% 100%;
+}
+/*第一张小背景图*/
+.ty-about-img-live{
+    background-image: url(../img/other/live/dream/46.jpg);
+}
+/*第二张小背景图*/
+.ty-about-img-study{
+    background-image: url(../img/other/study/176.png);
+}
+.ty-about-img-work{
+    background-image: url(../img/other/work/262.png);
+}
+.ty-about-img-innovate{
+    background-image: url(../img/other/innovate/5.png);
+}
+.ty-about-img-healthy{
+    background-image: url(../img/other/live/dream/2018022707411410058303!s.png);
+}
+.ty-about-img-travel{
+    background-image: url(../img/other/live/dream/2018073003152074666741!s.png);
+}
+.ty-about-img-literature{
+    background-image: url(../img/other/live/dream/2018061821393812099848!s.png);
+}
+.ty-about-img-emotion{
+    background-image: url(../img/other/live/dream/2018012621384853942639!s.png);
+}
+/*背景图上面的文本*/
+.sm-bg-text{
+    position:relative;
+    top:38%;
+    overflow: hidden;
+}
+.sm-bg-text a{
+    text-decoration: none;
+}
+.sm-bg-text div p{
+    font-size: 18px;
+}
+.sm-bg-text .sm-text{
+    font-size: 13px;
+    font-weight: bold;
+}
+.sm-bg-text>a>p{
+    margin-bottom:2rem;
+}
+.sm-bg-text div p{
+    margin: 0;
+}
+/*小背景图获取焦点样式*/
+.sm-bg-text:hover {
+    position: absolute;
+    top:0px;
+    width:100%;
+    height: 100%;
+    transition: all .3s ease-in-out;
+}
+.sm-bg-text::after{
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 1px;
+    left: 50%;
+    background: #fff;
+    background: rgba(255,255,255,.7);
+    top: 85px;
+}
+
+
+
+
+/*底部：列表*/
+.footer-list{
+    width:100%;
+    height:380px;
+}
+/*列表模块*/
+.list-content{
+    width:70%;
+    height:100%;
+    margin:0 auto;
+}
+/*下载应用样式*/
+.icon-size{
+    border-color:#55D4FD !important;
+    width:6rem;
+    height:2.5rem;
+    line-height: 2.5rem;
+    border-radius: 5px;
+}
+/*下载链接图片大小*/
+.icon-size img{
+    width:30px;
+    height:30px;
+}
+/*下载应用二维码大小*/
+.erweima{
+    width:120px;
+    height:120px;
+}
+/*最下面图片链接*/
+.list-ft-img{
+    width:70%;
+    margin: 0 auto;
+}
+.list-ft-img img{
+    width:100px;
+    height:50px;
+}

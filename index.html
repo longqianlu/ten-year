@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/base.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <title></title>
+    <style>
+    </style>
+</head>
+<body>
+<div>
+<!--主页——1.登录页面-->
+<div id="ty-index-login">
+    <div class="ty-index-login-content">
+        <!--(1)头部内容-->
+        <div class="d-flex justify-content-between">
+            <!--左上角：logo图标-->
+            <div class="p-3">
+                <img src="./img/index/logo_login.png" class="img-logo"/>
+            </div>
+            <!--右上角：注册按钮-->
+            <div>
+                <button class="btn bg-transparent text-white border-white ty-reg-btn  mr-3 small_text">注册</button>
+                <a href="#" class="text-white small_text ty-login-about" target="_blank">关于我们</a>
+            </div>
+        </div>
+        <!--(2)中间内容-->
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12 offset-2 text-center">
+                <!--大标题-->
+                <p class="text-white text-center big_text mt-4 ty-login-world">与世界分享你的追梦历程</p>
+                <!--(3)底部导读文字-->
+                <div class="mb-0 text-center text-white small_text ty-login-text ty-login-world">
+                    <span>「十年后」是一个基于梦想的经验交流社区。</span><br>
+    
+                    <span>在这里， 你可以自由的分享关于未来梦想的真实想法，</span><br>
+    
+                    <span>并探索更多有趣的梦想，结交志同道合的人</span>
+                </div>
+            </div>    
+        </div>
+    </div>
+</div>
+    <!--1.1----登录按钮-->
+<div id="open-ty-btn">
+    <button id="open-ty" class="btn_1">启梦</button>
+    <div id="ty-login-cover"></div>
+    <div id="ty-login-modal">
+        <p class="p-3"><input type="text" name="uname" placeholder="邮箱或手机号" class="input-text"></p>
+        <p><input type="password" name="upwd" placeholder="密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码" class="input-text"></p>
+        <p class="text-white small_text gray"><input type="checkbox" checked>记住密码<a href="#" class="text-white password-content">忘记密码</a></p>
+        <div class="input-group">
+            <input type="button" value="Login" class="ty-login-btn btn btn-sm">
+            <div id="ty-close">
+                <input type="button" value="Cancel" class="ty-login-btn btn btn-sm">
+            </div>
+        </div>
+    </div>
+</div>
+<!--主页——2.时间轴页面-->
+<div id="ty-timeline">
+    <div id="ty-carousel" class="timeline-content carousel" data-ride="carousel">
+            <!--中间：轮播图内容-->
+        <div class="carousel-inner carousel-text">
+            <div class="carousel-item active">
+                <div class="text-white blue text-center ty-timeline-date d-inline-block">
+                    <span class="font-weight-bold mt-3 ty-timeline-date-year">2018</span>
+                    <span class="small_text ty-timeline-date-month">Aug&nbsp;&nbsp;27</span>
+                </div>
+                <div class="d-inline-block">
+                    <p class="font-weight-bold ty_color timeline-content-title ml-0 mb-0 text-left">今天:&nbsp;未来正在发生</p>
+                    <p class="text-white timeline-content-at text-left p-1">@&nbsp;你的眼前</p>
+                    <p class="small_text text-white timeline-content-at">未来，每时每刻都在发生。今天，加入十年后，和我们一起，创造属于自己的未来。</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="text-white blue text-center ty-timeline-date d-inline-block">
+                    <span class="font-weight-bold mt-3 ty-timeline-date-year">2019</span>
+                    <span class="small_text ty-timeline-date-month">May&nbsp;&nbsp;17</span>
+                </div>
+                <div class="d-inline-block">
+                    <p class="font-weight-bold ty_color timeline-content-title mb-0 text-left">创建属于你的梦想</p>
+                    <p class="text-white timeline-content-at text-left p-1">@&nbsp;十年后</p>
+                    <p class="small_text text-white timeline-content-at">点击时间轴上的图标即可添加梦想。只需填入该梦想的名称，预期的实现时间，以及对</p><p class="small_text text-white timeline-content-at text-left">该梦想的描述，就可成功创建。</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="text-white blue text-center ty-timeline-date d-inline-block">
+                    <span class="font-weight-bold mt-3 ty-timeline-date-year">2019</span>
+                    <span class="small_text ty-timeline-date-month">Dec&nbsp;&nbsp;03</span>
+                </div>
+                <div class="d-inline-block">
+                    <p class="font-weight-bold ty_color timeline-content-title mb-0 text-left">记录追梦历程</p>
+                    <p class="text-white timeline-content-at text-left p-1">@&nbsp;十年后</p>
+                    <p class="small_text text-white timeline-content-at text-left">你可以基于每个梦想随时记录实时的追梦历程，以及你关于梦想瞬间的想法</p><p class="small_text text-white timeline-content-at text-left">。我们不希望你在这里仅仅是许愿，而是真正地把自己的梦想映射到今日的生活。</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="text-white blue text-center ty-timeline-date d-inline-block">
+                    <span class="font-weight-bold mt-3 ty-timeline-date-year">2020</span>
+                    <span class="small_text ty-timeline-date-month">Sep&nbsp;&nbsp;28</span>
+                </div>
+                <div class="d-inline-block">
+                    <p class="font-weight-bold ty_color timeline-content-title mb-0 text-left">与有趣的追梦者互动</p>
+                    <p class="text-white timeline-content-at text-left p-1">@&nbsp;十年后</p>
+                    <p class="small_text text-white timeline-content-at">你也可以在十年后关注任何有想法、有趣的人。你可以在发现页面看到的</p><p class="small_text text-white timeline-content-at text-left">各种有趣的追梦故事，也可以来自你主动的主题搜索</p>
+                </div>
+            </div>
+        </div>
+            <!--左侧：轮播图按钮-->
+        <a href="#ty-carousel" class="carousel-control-prev" data-slide="prev">
+            <img src="./img/index/timeline_arrow_left.png" alt="" class="ty-timeline-content-arrow">
+        </a>
+        <a href="#ty-carousel" class="carousel-control-next" data-slide="next">
+            <img src="./img/index/timeline_arrow_right.png" alt="" class="ty-timeline-content-arrow">
+        </a>
+</div>
+    <!--第二行：时间轴-->
+    <div class="timenav">
+        <!--1.时间失去焦点轴针-->
+        <ul class="list-unstyled">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul> 
+        <!--2.时间轴已激活轴针-->
+        <div class="tri-parent">
+            <div class="triangle"></div>
+            <div class="triangle-line"></div>
+        </div>
+        <!--3.时间轴事件-->
+        <div class="timenav-hover text-white">
+            <div class="text_line my_top"></div>
+            <div class="ty_color timenav-text my_top">
+                <span class="small_text font-weight-bold">与有趣的追梦者互动</span>
+            </div>
+        </div>
+        <div class="timenav-hover text-white">
+            <div class="text_line"></div>
+            <div class="ty_color timenav-text">
+                <span class="small_text font-weight-bold ml-2 timenav-hover" >记录追梦历程</span>
+            </div>
+        </div>
+        <div class="timenav-hover text-white">
+            <div class="text_line mt-4"></div>
+            <div class="ty_color timenav-text mt-4">
+                <span class="small_text font-weight-bold">创建属于你的梦想</span>
+            </div>
+        </div>
+        <div class="timenav-hover text-white ml-3">
+            <div class="text_line active"></div>
+            <div class="ty_color timenav-text timenav-active" >
+                <span class="small_text font-weight-bold">今天:未来正在发生</span>
+            </div>
+        </div>
+    </div>
+    <!--底部：时间轴进度条-->
+    <div class="ty-timescale d-flex justify-content-end">
+        <p>2015</p>
+        <p>2016</p>
+        <p>2017</p>
+        <p>2018</p>
+        <p>2019</p>
+        <p class="active font-weight-bold">2020</p>
+        <p>2021</p>
+        <p>2022</p>
+    </div> 
+</div>
+<!--主页——3.摩天轮-->
+<div>
+    <div class="ty-with-content">
+        <div class="ty-with-block text-white font-weight-bold">探索更多有趣的梦想</div>
+        <div class="text-white ty-with-block-line d-flex">
+            <div>发现在&nbsp;</div>
+            <div>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="" class="text-white">十年后</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-white">生活</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-white">学习</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-white">工作</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-white">创新</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-white">健康</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-white">旅行</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-white">文艺</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-white">情感</a>
+                    </li>
+                </ul>
+            </div>
+            <div>&nbsp;的梦想家</div>
+        </div>
+        <p></p>
+    </div>
+</div>
+<!--主页——4.十年分享-->
+<div class="ty-about">
+    <!--背景图片-->
+    <div class="ty-about-bg">
+        <!--背景图片透明度-->
+        <div class="bg-mask">
+            <!--图片区域：第一行四张小背景图-->
+            <div class="ty-about-size d-flex justify-content-between">
+                <!--第一张小背景图-->
+                <div class="ty-about-img-live ty-about-img">
+                    <!--小背景图透明度-->
+                    <div class="bg-mask bg-hover">
+                        <div class="sm-bg-text">
+                            <a href="#" class="text-white">
+                                <p class="middle_text">生活</p>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p>14161</p>
+                                        <p class="sm-text">梦想</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>23164</p>
+                                        <p class="sm-text">动态</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--第二张小背景图-->
+                <div class="ty-about-img-study ty-about-img">
+                    <!--小背景图透明度-->
+                    <div class="bg-mask bg-hover">
+                        <div class="sm-bg-text">
+                            <a href="#" class="text-white">
+                                <p class="middle_text">学习</p>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p>7555</p>
+                                        <p class="sm-text">梦想</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>6040</p>
+                                        <p class="sm-text">动态</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--第三张小背景图-->
+                <div class="ty-about-img-work ty-about-img">
+                    <!--小背景图透明度-->
+                    <div class="bg-mask bg-hover">
+                        <div class="sm-bg-text">
+                            <a href="#" class="text-white">
+                                <p class="middle_text">工作</p>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p>20204</p>
+                                        <p class="sm-text">梦想</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>29150</p>
+                                        <p class="sm-text">动态</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--第四张小背景图-->
+                <div class="ty-about-img-innovate ty-about-img">
+                    <!--小背景图透明度-->
+                    <div class="bg-mask bg-hover">
+                        <div class="sm-bg-text">
+                            <a href="#" class="text-white">
+                                <p class="middle_text">创新</p>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p>2568</p>
+                                        <p class="sm-text">梦想</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>2568</p>
+                                        <p class="sm-text">动态</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--图片区域：第一行四张小背景图-->
+            <div class="ty-expro-size d-flex justify-content-between">
+                <!--第一张小背景图-->
+                <div class="ty-about-img-healthy ty-about-img">
+                    <!--小背景图透明度-->
+                    <div class="bg-mask bg-hover">
+                        <div class="sm-bg-text">
+                            <a href="#" class="text-white">
+                                <p class="middle_text">健康</p>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p>14565</p>
+                                        <p class="sm-text">梦想</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>87485</p>
+                                        <p class="sm-text">动态</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--第二张小背景图-->
+                <div class="ty-about-img-travel ty-about-img">
+                    <!--小背景图透明度-->
+                    <div class="bg-mask bg-hover">
+                        <div class="sm-bg-text">
+                            <a href="#" class="text-white">
+                                <p class="middle_text">旅行</p>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p>5648</p>
+                                        <p class="sm-text">梦想</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>7845</p>
+                                        <p class="sm-text">动态</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--第三张小背景图-->
+                <div class="ty-about-img-literature ty-about-img">
+                    <!--小背景图透明度-->
+                    <div class="bg-mask bg-hover">
+                        <div class="sm-bg-text">
+                            <a href="#" class="text-white">
+                                <p class="middle_text">文艺</p>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p>21165</p>
+                                        <p class="sm-text">梦想</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>7845</p>
+                                        <p class="sm-text">动态</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--第四张小背景图-->
+                <div class="ty-about-img-emotion ty-about-img">
+                    <!--小背景图透明度-->
+                    <div class="bg-mask bg-hover">
+                        <div class="sm-bg-text">
+                            <a href="#" class="text-white">
+                                <p class="middle_text">情感</p>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p>48648</p>
+                                        <p class="sm-text">梦想</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>7845</p>
+                                        <p class="sm-text">动态</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--底部:列表-->
+<footer>
+    <div class="footer-list bg-dark">
+        <!--列表内容-->
+        <div class="list-content row">
+            <!--第一列：logo-->
+            <div class="col-md-3 text-muted small_text mt-4">
+                <ul class="list-unstyled">
+                    <li class="text-left">
+                        <img src="./img/index/logo_login.png" class="img-logo "/>
+                    </li>
+                    <li class="mt-3">
+                        <p class="text-left">与世界分享你的追梦历程</p>
+                    </li>
+                    <li>
+                        <p class="text-left">「十年后」是一个基于梦想的经验交流社区，在这里，你可以自由的分享关于未来梦想的真实想法，并探索更多有趣的梦想，结交志同道合的人。</p>
+                    </li>
+                </ul>
+            </div>
+            <!--第二列：关于我们-->
+            <div class="col-md-3 mt-4">
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="" class="text-white font-weight-bold list-text">关于我们</a>
+                    </li>
+                    <li>
+                        <a href="" class="small_text text-muted">关于十年后</a>
+                    </li>
+                    <li>
+                        <a href="" class="small_text text-muted">团队成员</a>
+                    </li>
+                    <li>
+                        <a href="" class="small_text text-muted">加入我们</a>
+                    </li>
+                    <li>
+                        <a href="" class="small_text text-muted">用户协议</a>
+                    </li>
+                    <li>
+                        <a href="" class="small_text text-muted">回到旧版</a>
+                    </li>
+                </ul>
+            </div>
+            <!--第三列：媒体报道-->
+            <div class="col-md-3 mt-4">
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="" class="text-white font-weight-bold list-text">媒体报道</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-muted small_text">PingWest</a>
+                    </li>
+                    <li>
+                        <a href="" class="small_text text-muted">动点科技</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-muted small_text">IT桔子</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-muted small_text">创业邦</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-muted small_text">i黑马</a>
+                    </li>
+                </ul>
+            </div>
+            <!--第四列：下载应用-->
+            <div class="col-md-3 mt-4">
+                <div>
+                    <a href="" class="text-white list-text font-weight-bold">下载应用</a>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="border ty_color icon-size mt-3">
+                            <a href="">
+                                <img src="img/index/IMG_4334.jpg" alt="" class=""/>
+                                <span class="ty_color">IOS&nbsp;版</span>
+                            </a>
+                        </div>
+                        <div class="border ty_color icon-size mt-3">
+                            <a href="">
+                                <img src="img/index/IMG_4335%20.JPG" alt="" class=""/>
+                                <span class="ty_color">Android&nbsp;</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-3">
+                        <img src="img/index/qrcode.png" alt="" class="erweima"/>
+                    </div>
+                </div>
+            </div>
+            <!--版权-->
+            <div class="list-ft-img mt-3 small_text text-muted">
+                <p>
+                    <span><a href="" class="text-muted">© 2013 - 2015 10years.me.</a></span>
+                    <span>上海秦誓网络科技有限公司 All Rights Reserved.</span>
+                    <span>
+                        <a href="" class="text-muted">沪ICP备13021804号</a>
+                    </span>
+                </p>
+            </div>
+            <div class="list-ft-img">
+                <a href="">
+                    <img src="img/index/90X45.png" alt=""/>
+                </a>
+                <a href="">
+                    <img src="img/index/badge2xblue.png" alt="" class="w-25"/>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+</body>
+<script>
+
+           $(".btn_1").click(function() {
+                  $("#ty-login-cover")[0].style.display="block";   //显示遮罩层
+                  $("#ty-login-modal")[0].style.display="block";   //显示弹出层
+                  $(".btn_1")[0].style.display="none";
+           })
+      
+            $("#ty-close").click(function(){
+                  $("#ty-login-cover")[0].style.display="none";   //隐藏遮罩层
+                  $("#ty-login-modal")[0].style.display="none";   //隐藏弹出层
+                  $(".btn_1")[0].style.display="block";
+                  $(".btn_1")[0].style.margin="0 auto";
+          })
+</script>
+</html>

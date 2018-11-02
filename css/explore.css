@@ -1,0 +1,226 @@
+body{
+    background:#f4f4f4;
+    width:100%;
+    z-index: 1;
+    position:relative;
+    line-height: 1;
+}
+/*页面主体*/
+.ty-container{
+    display: block;
+    padding-top: 50px;
+    position:relative;
+}
+/*头部背景图*/
+.ty-channel-bg{
+    position:relative;
+    background-image:url(../img/explore/explore_1/46.png);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    height:250px;
+    margin-bottom: 20px;
+}
+/*页面标题*/
+.ty-channel-title-content{
+    width:300px;
+    position:relative;
+    top:60px;
+    margin:0 auto;
+}
+/*标题字体*/
+.ty-channel-title{
+    font-size: 40px;
+}
+.ty-count{
+    font-size: 24px;
+}
+.ty-count::after{
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 1px;
+    left: 50%;
+    background: #fff;
+    background: rgba(255,255,255,.7);
+    top: 85px;
+}
+
+/*页面内容模块*/
+.ty-explore-any{
+    max-width: 80%;
+    padding: 0 40px;
+    position: relative;
+    margin: 0 auto
+}
+/*动态导航栏*/
+.ty-explore-nav{
+    position:relative;
+    border-radius: 5px;
+}
+.ty-nav-tabs{
+    width:100%;
+    height:40px;
+    overflow: hidden;
+}
+.ty-nav-item{
+    text-align: center;
+    width:33.3%;
+}
+
+.ty-nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 1px solid transparent;
+}
+
+.ty-nav-link.disabled {
+    color: #6c757d;
+}
+
+.ty-tab-content > .ty-tab-pane{
+    display: none;
+}
+
+.ty-tab-content > .nav-active{
+    display: block;
+}
+
+.ty-explore-nav ul li a{
+    text-decoration: none;
+    display: block;
+    height: 40px;
+    background: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.ty-explore-nav ul li a.nav-active{
+    border-bottom-color: #55D4FD;
+}
+
+/*页面主要内容*/
+/*大模块*/
+.ty-explore-content,.ty-explore-content{
+    margin-top:30px;
+    width:100%;
+    min-height: 600px;
+    position:relative;
+}
+
+/*整个小模块*/
+.ty-dream-trends{
+    position:relative;
+    width:350px;
+    height:250px;
+    border-radius:8px;
+    box-shadow: 0 2px 3px rgba(0,0,0,.07);
+    background:#fff;
+}
+
+/*小模块hover*/
+.ty-dream-hover:hover{
+    transition: all .3s ease-in-out;
+    transform: scale(1.01,1.01);
+    box-shadow: 5px 5px 8px rgba(0,0,0,.07);
+}
+
+.ty-dream-trends a{
+    text-decoration: none;
+    vertical-align: baseline;
+}
+
+/*小模块右上角小图标*/
+.ty-dream-follow i{
+    font-size: 22px;
+    transition: all .3s;
+}
+
+a.ty-dream-follow{
+    position:absolute;
+    top:15px;
+    right:15px;
+    width:20px;
+    height:20px;
+    border-radius: 5px;
+    z-index: 22;
+    padding:2px 4px 4px;
+    transition: all .3s;
+    background:#fff;
+}
+
+/*小模块头部——背景图*/
+.ty-dream-header{
+    position: relative;
+    width: 100%;
+    height: 55%;
+    background-image: url(../img/explore/explore_1/2017123120043217575421!s.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    z-index: 20;
+}
+
+/*小模块的头部文字*/
+.ty-dream-mask{
+    position:absolute;
+    height:100%;
+    width:70%;
+    left:0;
+    bottom:0;
+    border-radius: 5px 5px 0 0;
+    background: linear-gradient(to left,rgba(0,0,0,0) 0,rgba(0,0,0,.6) 100%);
+    z-index:21;
+}
+
+.ty-dream-title,.ty-dream-sm-text{
+    position:relative;
+    z-index: 23;
+    text-shadow: 0 0 2px rgba(0,0,0,.5);
+    margin-left:20px;
+    margin-bottom: 8px;
+    color:#fff;
+}
+
+/*小模块中间内容*/
+.ty-dream-body{
+    left:0;
+    right:0;
+    position:absolute;
+    color:#666666;
+    padding:15px 20px 20px;
+    top:55%;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius:5px;
+    bottom: 20px;
+    overflow: hidden;
+    z-index: 35;
+    background:#fff;
+}
+
+/*小模块底部*/
+.ty-dream-footer{
+    width: 100%;
+    height:78px;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 38;
+    border-radius:0 0 8px 8px;
+    transition: all .5s ease-in-out;
+}
+
+/*底部获取焦点隐藏部分*/
+.ty-dream-col .ty-dream-col-count{
+    font-size: 16px;
+    color:#444;
+}
+
+.ty-dream-col p{
+    color: #999;
+    line-height: 20px;
+    font-size: 13px;
+    margin-bottom: 0;
+}
