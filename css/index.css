@@ -363,8 +363,6 @@
 }
 
 
-
-
 /*四：大背景图*/
 .ty-about{
     width:100%;
@@ -375,8 +373,10 @@
     height:600px;
     display: block;
     position: relative;
-    background-image: url(../img/index/ty_login_channel.jpg);
-    background-size:100% 100% ;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    background-position: center center ;
+    background-image:url(../img/index/ty_login_channel.jpg);
     z-index: 10;
 }
 /*第一行四张图片*/
@@ -385,7 +385,7 @@
     top:50px;
     position:absolute;
     left:50%;
-    margin-left: -500px;
+    margin-left: -520px;
     z-index: 20;
 }
 /*第二行四张图片*/
@@ -394,7 +394,7 @@
     top:200px;
     position:absolute;
     left:50%;
-    margin-left: -500px;
+    margin-left: -520px;
 }
 .ty-about-bg>div:nth-child(2){
     top:200px;
@@ -414,58 +414,79 @@
 .ty-about-img-live{
     background-image: url(../img/other/live/dream/46.jpg);
 }
+
 /*第二张小背景图*/
 .ty-about-img-study{
     background-image: url(../img/other/study/176.png);
 }
+
+/*第三张小背景图*/
 .ty-about-img-work{
     background-image: url(../img/other/work/262.png);
 }
+
+/*第四张小背景图*/
 .ty-about-img-innovate{
     background-image: url(../img/other/innovate/5.png);
 }
+
+/*第五张小背景图*/
 .ty-about-img-healthy{
     background-image: url(../img/other/live/dream/2018022707411410058303!s.png);
 }
+
+/*第六张小背景图*/
 .ty-about-img-travel{
     background-image: url(../img/other/live/dream/2018073003152074666741!s.png);
 }
+
+/*第七张小背景图*/
 .ty-about-img-literature{
     background-image: url(../img/other/live/dream/2018061821393812099848!s.png);
 }
+
+/*第八张小背景图*/
 .ty-about-img-emotion{
     background-image: url(../img/other/live/dream/2018012621384853942639!s.png);
 }
+
 /*背景图上面的文本*/
 .sm-bg-text{
     position:relative;
-    top:38%;
+    top:45%;
     overflow: hidden;
 }
+
 .sm-bg-text a{
     text-decoration: none;
 }
+
 .sm-bg-text div p{
     font-size: 18px;
 }
+
 .sm-bg-text .sm-text{
     font-size: 13px;
     font-weight: bold;
 }
+
 .sm-bg-text>a>p{
-    margin-bottom:2rem;
+    margin-bottom:1.5rem;
 }
+
 .sm-bg-text div p{
     margin: 0;
 }
+
 /*小背景图获取焦点样式*/
 .sm-bg-text:hover {
     position: absolute;
-    top:0px;
+    top:10px;
     width:100%;
     height: 100%;
-    transition: all .3s ease-in-out;
+    transition: all .5s ease-in-out;
 }
+
 .sm-bg-text::after{
     content: '';
     position: absolute;
@@ -474,7 +495,7 @@
     left: 50%;
     background: #fff;
     background: rgba(255,255,255,.7);
-    top: 85px;
+    top: 78px;
 }
 
 

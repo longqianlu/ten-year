@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/explore.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/explore_live.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<!--页面头部-->
+<!--通用header-->
+<!--未登录导航条-->
+<header>
+    <div id="ty-layout-nav" class="ty-nav">
+        <div class="ty-nav-content d-flex justify-content-between">
+            <div class="pl-5 ty-nav-btn-content">
+                <a href="" class="small_text text-muted mr-5 ty-nav-btn">动态</a>
+                <a href="" class="small_text active ty_color ty-nav-btn">发现</a>
+            </div>
+            <a href="" class="ml-4 mt-1">
+                <span class="ty-nav-logo-content"></span>
+            </a>
+            <div class="pr-5 ty-nav-login-content">
+                <a href="" class="small_text text-dark">注册</a>
+                <button class="btn  small_text text-white ml-5">登录</button>
+            </div>
+        </div>
+    </div>
+</header>
+<!--页面主体-->
+<div class="ty-container">
+        <!--1.头部背景-->
+        <div class="ty-channel-bg ty-live-bg">
+            <!--背景透明度-->
+            <div class="bg-mask">
+                <!--头部标题-->
+                <div class="ty-channel-title-content">
+                    <div class="ty-channel-title text-white text-center">生活</div>
+                    <div class="row mt-4 ty-count text-center">
+                        <div class="col-md-6 col-sm-12 text-white">
+                            <p class="font-weight-bold">14158</p>
+                            <p class="list-text">梦想</p>
+                        </div>
+                        <div class="col-md-6 col-sm-12 text-white">
+                            <p class="font-weight-bold">23164</p>
+                            <p class="list-text">动态</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ty-explore-any">
+            <div class="ty-explore-nav">
+                <!--导航栏-->
+                <ul class="list-unstyled ty-nav-tabs nav">
+                    <li class="ty-nav-item">
+                        <a href="#ty-tab1" class="nav-active ty-nav-link ty_color" data-toggle="tab">梦想</a>
+                    </li>
+                    <li class="ty-nav-item">
+                        <a href="#ty-tab2" class="text-dark ty-nav-link" data-toggle="tab">梦想家</a>
+                    </li>
+                    <li class="ty-nav-item">
+                        <a href="#ty-tab3" class="text-dark ty-nav-link" data-toggle="tab">动态</a>
+                    </li>
+                </ul>
+                <!--内容部分——19张小图-->
+                <div class="ty-tab-content">
+                    <div class="ty-tab-pane nav-active ty-explore-content d-flex flex-wrap justify-content-between" id="ty-tab1">
+
+                        <div class="ty-dream-trends ty-dream-hover">
+                            <a href="" class="ty-dream-follow">
+                                <i class="ty-dream-follow-icon ty_color"></i>
+                            </a>
+                            <a href="">
+                                <div class="ty-dream-header ty-channel-bg-1">
+                                    <div class="ty-dream-mask"></div>
+                                    <div class="ty-dream-title list-text pt-3">自我监视</div>
+                                    <div class="ty-dream-sm-text small_text pt-1">2017年4月13日 未实现</div>
+                                </div>
+                                <div class="ty-dream-body">根据《意志力》，自我监视可以提高意志力</div>
+                                <div class="ty-dream-footer d-flex justify-content-around text-center">
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">176</p>
+                                        <p>动态</p>
+                                    </div>
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">0</p>
+                                        <p>钦佩</p>
+                                    </div>
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">19</p>
+                                        <p>关注者</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ty-dream-trends ty-dream-hover">
+                            <a href="" class="ty-dream-follow">
+                                <i class="ty-dream-follow-icon ty_color"></i>
+                            </a>
+                            <a href="">
+                                <div class="ty-dream-header ty-channel-bg-2">
+                                    <div class="ty-dream-mask"></div>
+                                    <div class="ty-dream-title list-text pt-3">早睡早起身体好</div>
+                                    <div class="ty-dream-sm-text small_text pt-1">2019年01月16日 进行中</div>
+                                </div>
+                                <div class="ty-dream-body">早睡早起保持精神状态~用爱今天记录时间和梦想~</div>
+                                <div class="ty-dream-footer d-flex justify-content-around text-center">
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">10</p>
+                                        <p>动态</p>
+                                    </div>
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">1</p>
+                                        <p>钦佩</p>
+                                    </div>
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">1</p>
+                                        <p>关注者</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ty-dream-trends ty-dream-hover">
+                            <a href="" class="ty-dream-follow">
+                                <i class="ty-dream-follow-icon ty_color"></i>
+                            </a>
+                            <a href="">
+                                <div class="ty-dream-header ty-channel-bg-3">
+                                    <div class="ty-dream-mask"></div>
+                                    <div class="ty-dream-title list-text pt-3">减肥</div>
+                                    <div class="ty-dream-sm-text small_text pt-1">2018年08月22日 未实现</div>
+                                </div>
+                                <div class="ty-dream-body">简单明了 就两个字 减肥</div>
+                                <div class="ty-dream-footer d-flex justify-content-around text-center">
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">46</p>
+                                        <p>动态</p>
+                                    </div>
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">0</p>
+                                        <p>钦佩</p>
+                                    </div>
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">0</p>
+                                        <p>关注者</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ty-dream-trends ty-dream-hover mt-3">
+                            <a href="" class="ty-dream-follow">
+                                <i class="ty-dream-follow-icon ty_color"></i>
+                            </a>
+                            <a href="">
+                                <div class="ty-dream-header ty-channel-bg-4">
+                                    <div class="ty-dream-mask"></div>
+                                    <div class="ty-dream-title list-text pt-3">立业</div>
+                                    <div class="ty-dream-sm-text small_text pt-1">2018年8月31日 已实现</div>
+                                </div>
+                                <div class="ty-dream-body">立业</div>
+                                <div class="ty-dream-footer d-flex justify-content-around text-center">
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">13</p>
+                                        <p>动态</p>
+                                    </div>
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">0</p>
+                                        <p>钦佩</p>
+                                    </div>
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">0</p>
+                                        <p>关注者</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ty-dream-trends ty-dream-hover mt-3">
+                            <a href="" class="ty-dream-follow">
+                                <i class="ty-dream-follow-icon ty_color"></i>
+                            </a>
+                            <a href="">
+                                <div class="ty-dream-header ty-channel-bg-5">
+                                    <div class="ty-dream-mask"></div>
+                                    <div class="ty-dream-title list-text pt-3">学会煮咖啡</div>
+                                    <div class="ty-dream-sm-text small_text pt-1">2017年05月04日 已实现</div>
+                                </div>
+                                <div class="ty-dream-body">妈妈退休后想开咖啡馆，我先学会煮咖啡，然后再教给妈妈。</div>
+                                <div class="ty-dream-footer d-flex justify-content-around text-center">
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">73</p>
+                                        <p>动态</p>
+                                    </div>
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">10</p>
+                                        <p>钦佩</p>
+                                    </div>
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">35</p>
+                                        <p>关注者</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ty-dream-trends ty-dream-hover mt-3">
+                            <a href="" class="ty-dream-follow">
+                                <i class="ty-dream-follow-icon ty_color"></i>
+                            </a>
+                            <a href="">
+                                <div class="ty-dream-header ty-channel-bg-6">
+                                    <div class="ty-dream-mask"></div>
+                                    <div class="ty-dream-title list-text pt-3">我</div>
+                                    <div class="ty-dream-sm-text small_text pt-1">2018年12月31日 进行中</div>
+                                </div>
+                                <div class="ty-dream-body">1.清楚自己要的是什么 2.了解自己该做的有哪些并执行 3.明白对手只有自己，不再执着于别人的行动</div>
+                                <div class="ty-dream-footer d-flex justify-content-around text-center">
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">5</p>
+                                        <p>动态</p>
+                                    </div>
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">0</p>
+                                        <p>钦佩</p>
+                                    </div>
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">0</p>
+                                        <p>关注者</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ty-dream-trends ty-dream-hover mt-3">
+                            <a href="" class="ty-dream-follow">
+                                <i class="ty-dream-follow-icon ty_color"></i>
+                            </a>
+                            <a href="">
+                                <div class="ty-dream-header ty-channel-bg-7">
+                                    <div class="ty-dream-mask"></div>
+                                    <div class="ty-dream-title list-text pt-3">一如最初</div>
+                                    <div class="ty-dream-sm-text small_text pt-1">2025年05月06日 进行中</div>
+                                </div>
+                                <div class="ty-dream-body">我最喜欢听别人说的一句话是，你变了；我最不喜欢听别人说的一句话是，你变了</div>
+                                <div class="ty-dream-footer d-flex justify-content-around text-center">
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">156</p>
+                                        <p>动态</p>
+                                    </div>
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">2</p>
+                                        <p>钦佩</p>
+                                    </div>
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">28</p>
+                                        <p>关注者</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ty-dream-trends ty-dream-hover mt-3">
+                            <a href="" class="ty-dream-follow">
+                                <i class="ty-dream-follow-icon ty_color"></i>
+                            </a>
+                            <a href="">
+                                <div class="ty-dream-header ty-channel-bg-8">
+                                    <div class="ty-dream-mask"></div>
+                                    <div class="ty-dream-title list-text pt-3">练字</div>
+                                    <div class="ty-dream-sm-text small_text pt-1">2020年01月09日 进行中</div>
+                                </div>
+                                <div class="ty-dream-body">给自己一年时间练好字，每天坚持</div>
+                                <div class="ty-dream-footer d-flex justify-content-around text-center">
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">160</p>
+                                        <p>动态</p>
+                                    </div>
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">3</p>
+                                        <p>钦佩</p>
+                                    </div>
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">60</p>
+                                        <p>关注者</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ty-dream-trends ty-dream-hover mt-3">
+                            <a href="" class="ty-dream-follow">
+                                <i class="ty-dream-follow-icon ty_color"></i>
+                            </a>
+                            <a href="">
+                                <div class="ty-dream-header ty-channel-bg-9">
+                                    <div class="ty-dream-mask"></div>
+                                    <div class="ty-dream-title list-text pt-3">2017年记录</div>
+                                    <div class="ty-dream-sm-text small_text pt-1">2018年04月01日 已实现</div>
+                                </div>
+                                <div class="ty-dream-body">2017目标，存钱一万。</div>
+                                <div class="ty-dream-footer d-flex justify-content-around text-center">
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">115</p>
+                                        <p>动态</p>
+                                    </div>
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">1</p>
+                                        <p>钦佩</p>
+                                    </div>
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">7</p>
+                                        <p>关注者</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ty-dream-trends ty-dream-hover mt-3">
+                            <a href="" class="ty-dream-follow">
+                                <i class="ty-dream-follow-icon ty_color"></i>
+                            </a>
+                            <a href="">
+                                <div class="ty-dream-header ty-channel-bg-10">
+                                    <div class="ty-dream-mask"></div>
+                                    <div class="ty-dream-title list-text pt-3">10000h=417d</div>
+                                    <div class="ty-dream-sm-text small_text pt-1">2015年05月20日 已实现</div>
+                                </div>
+                                <div class="ty-dream-body">自己去亲身做个实验，记录我的成长"10000"小时究竟可以成为什么？！</div>
+                                <div class="ty-dream-footer d-flex justify-content-around text-center">
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">341</p>
+                                        <p>动态</p>
+                                    </div>
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">7</p>
+                                        <p>钦佩</p>
+                                    </div>
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">24</p>
+                                        <p>关注者</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ty-dream-trends ty-dream-hover mt-3">
+                            <a href="" class="ty-dream-follow">
+                                <i class="ty-dream-follow-icon ty_color"></i>
+                            </a>
+                            <a href="">
+                                <div class="ty-dream-header ty-channel-bg-11">
+                                    <div class="ty-dream-mask"></div>
+                                    <div class="ty-dream-title list-text pt-3">成为一个温暖善良的人</div>
+                                    <div class="ty-dream-sm-text small_text pt-1">2019年12月31日 进行中</div>
+                                </div>
+                                <div class="ty-dream-body">希望在2020年之前能够改掉坏脾气，真正沉淀下来。</div>
+                                <div class="ty-dream-footer d-flex justify-content-around text-center">
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">69</p>
+                                        <p>动态</p>
+                                    </div>
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">0</p>
+                                        <p>钦佩</p>
+                                    </div>
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">2</p>
+                                        <p>关注者</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ty-dream-trends ty-dream-hover mt-3">
+                            <a href="" class="ty-dream-follow">
+                                <i class="ty-dream-follow-icon ty_color"></i>
+                            </a>
+                            <a href="">
+                                <div class="ty-dream-header ty-channel-bg-12">
+                                    <div class="ty-dream-mask"></div>
+                                    <div class="ty-dream-title list-text pt-3">七梦加油站</div>
+                                    <div class="ty-dream-sm-text small_text pt-1">2018年07月30日 已实现</div>
+                                </div>
+                                <div class="ty-dream-body">分享正能量视频 http://i.youku.com/faithbuilding</div>
+                                <div class="ty-dream-footer d-flex justify-content-around text-center">
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">115</p>
+                                        <p>动态</p>
+                                    </div>
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">10</p>
+                                        <p>钦佩</p>
+                                    </div>
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">30</p>
+                                        <p>关注者</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ty-dream-trends ty-dream-hover mt-3">
+                            <a href="" class="ty-dream-follow">
+                                <i class="ty-dream-follow-icon ty_color"></i>
+                            </a>
+                            <a href="">
+                                <div class="ty-dream-header ty-channel-bg-13">
+                                    <div class="ty-dream-mask"></div>
+                                    <div class="ty-dream-title list-text pt-3">华丽的冒险。</div>
+                                    <div class="ty-dream-sm-text small_text pt-1">2018年12月25日 进行中</div>
+                                </div>
+                                <div class="ty-dream-body">这是关于我自己的。</div>
+                                <div class="ty-dream-footer d-flex justify-content-around text-center">
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">224</p>
+                                        <p>动态</p>
+                                    </div>
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">0</p>
+                                        <p>钦佩</p>
+                                    </div>
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">1</p>
+                                        <p>关注者</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ty-dream-trends ty-dream-hover mt-3">
+                            <a href="" class="ty-dream-follow">
+                                <i class="ty-dream-follow-icon ty_color"></i>
+                            </a>
+                            <a href="">
+                                <div class="ty-dream-header ty-channel-bg-14">
+                                    <div class="ty-dream-mask"></div>
+                                    <div class="ty-dream-title list-text pt-3">电影音乐剧歌剧文学哲学等</div>
+                                    <div class="ty-dream-sm-text small_text pt-1">2022年06月19日 进行中</div>
+                                </div>
+                                <div class="ty-dream-body">未经审察的生活是不值得活的。</div>
+                                <div class="ty-dream-footer d-flex justify-content-around text-center">
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">170</p>
+                                        <p>动态</p>
+                                    </div>
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">3</p>
+                                        <p>钦佩</p>
+                                    </div>
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">16</p>
+                                        <p>关注者</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ty-dream-trends ty-dream-hover mt-3">
+                            <a href="" class="ty-dream-follow">
+                                <i class="ty-dream-follow-icon ty_color"></i>
+                            </a>
+                            <a href="">
+                                <div class="ty-dream-header ty-channel-bg-15">
+                                    <div class="ty-dream-mask"></div>
+                                    <div class="ty-dream-title list-text pt-3">做一个善良的人</div>
+                                    <div class="ty-dream-sm-text small_text pt-1">2023年12月21日 进行中</div>
+                                </div>
+                                <div class="ty-dream-body">我想像长今一样，做一个善良，平和，爱笑，活泼，做任何事都认真努力，同时也懂得反省自己，有自己的坚持和态度，坚强，懂得忍耐的人！</div>
+                                <div class="ty-dream-footer d-flex justify-content-around text-center">
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">533</p>
+                                        <p>动态</p>
+                                    </div>
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">2</p>
+                                        <p>钦佩</p>
+                                    </div>
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">24</p>
+                                        <p>关注者</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ty-dream-trends ty-dream-hover mt-3">
+                            <a href="" class="ty-dream-follow">
+                                <i class="ty-dream-follow-icon ty_color"></i>
+                            </a>
+                            <a href="">
+                                <div class="ty-dream-header ty-channel-bg-16">
+                                    <div class="ty-dream-mask"></div>
+                                    <div class="ty-dream-title list-text pt-3">一小时计划_我要讲故事</div>
+                                    <div class="ty-dream-sm-text small_text pt-1">2018年2月13日 延滞中</div>
+                                </div>
+                                <div class="ty-dream-body">鲜贤险现（以前不知道的，好的，坏的，表达）</div>
+                                <div class="ty-dream-footer d-flex justify-content-around text-center">
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">284</p>
+                                        <p>动态</p>
+                                    </div>
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">0</p>
+                                        <p>钦佩</p>
+                                    </div>
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">4</p>
+                                        <p>关注者</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ty-dream-trends ty-dream-hover mt-3">
+                            <a href="" class="ty-dream-follow">
+                                <i class="ty-dream-follow-icon ty_color"></i>
+                            </a>
+                            <a href="">
+                                <div class="ty-dream-header ty-channel-bg-17">
+                                    <div class="ty-dream-mask"></div>
+                                    <div class="ty-dream-title list-text pt-3">照顾好自己(*￣︶￣)</div>
+                                    <div class="ty-dream-sm-text small_text pt-1">2018年12月17日 进行中</div>
+                                </div>
+                                <div class="ty-dream-body">早睡 岁安</div>
+                                <div class="ty-dream-footer d-flex justify-content-around text-center">
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">128</p>
+                                        <p>动态</p>
+                                    </div>
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">0</p>
+                                        <p>钦佩</p>
+                                    </div>
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">35</p>
+                                        <p>关注者</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ty-dream-trends ty-dream-hover mt-3">
+                            <a href="" class="ty-dream-follow">
+                                <i class="ty-dream-follow-icon ty_color"></i>
+                            </a>
+                            <a href="">
+                                <div class="ty-dream-header ty-channel-bg-18">
+                                    <div class="ty-dream-mask"></div>
+                                    <div class="ty-dream-title list-text pt-3">Hardi V4.0版本发布</div>
+                                    <div class="ty-dream-sm-text small_text pt-1">2018年07月28日 延滞中</div>
+                                </div>
+                                <div class="ty-dream-body">Hardi V4.0 is currently in beta笑脸。</div>
+                                <div class="ty-dream-footer d-flex justify-content-around text-center">
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">59</p>
+                                        <p>动态</p>
+                                    </div>
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">1</p>
+                                        <p>钦佩</p>
+                                    </div>
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">2</p>
+                                        <p>关注者</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ty-dream-trends ty-dream-hover mt-3">
+                            <a href="" class="ty-dream-follow">
+                                <i class="ty-dream-follow-icon ty_color"></i>
+                            </a>
+                            <a href="">
+                                <div class="ty-dream-header ty-channel-bg-19">
+                                    <div class="ty-dream-mask"></div>
+                                    <div class="ty-dream-title list-text pt-3">容忍我的碎碎念</div>
+                                    <div class="ty-dream-sm-text small_text pt-1">2026年01月25日 进行中</div>
+                                </div>
+                                <div class="ty-dream-body">碎碎生活碎碎念</div>
+                                <div class="ty-dream-footer d-flex justify-content-around text-center">
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">141</p>
+                                        <p>动态</p>
+                                    </div>
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">0</p>
+                                        <p>钦佩</p>
+                                    </div>
+                                    <div class="ty-dream-col mt-3">
+                                        <p class="ty-dream-col-count font-weight-bold">9</p>
+                                        <p>关注者</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <p class="text-muted ty-dropdown">下拉加载</p>
+                    </div>
+                    <div class="ty-tab-pane" id="ty-tab2">
+                        <img src="./img/explore/explore_study/loading.gif" alt=""/>加载中...
+                    </div>
+                    <div class="ty-tab-pane" id="ty-tab3">
+                        <img src="./img/explore/explore_study/loading.gif" alt=""/>加载中...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

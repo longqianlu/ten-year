@@ -17,6 +17,7 @@ body{
 .list-text{
     font-size:18px;
 }
+
 .middle_text{
     font-size:26px;
 }
@@ -31,8 +32,13 @@ body{
 .ty_color{
     color:#55D4FD !important;
 }
+
+.ty-bg-color{
+    background:#55D4FD;
+}
 /*a标签去掉样式*/
 
 .text-none{
     text-decoration: none;
 }
+

@@ -1,0 +1,137 @@
+/*************详情页explore_all多选择页特有样式——start****************/
+/*四：大背景图*/
+.ty-about{
+    width:100%;
+    position:relative;
+}
+.ty-all-bg{
+    width:100%;
+    height:400px;
+    display: block;
+    position: relative;
+    background:#37BD94;
+    background: -webkit-gradient(linear,0 0,100% 0,from(#3bb1dd),to(#fec454));
+    z-index: 10;
+}
+/*第一行四张图片*/
+.ty-about-size{
+    width:1020px;
+    top:50px;
+    position:absolute;
+    left:50%;
+    margin-left: -520px;
+    z-index: 20;
+}
+/*第二行四张图片*/
+.ty-expro-size{
+    width:1020px;
+    top:200px;
+    position:absolute;
+    left:50%;
+    margin-left: -520px;
+}
+.ty-about-bg>div:nth-child(2){
+    top:200px;
+}
+/*八张图片尺寸*/
+.ty-about-img{
+    width: 230px;
+    height:130px;
+    border-radius:5px;
+    display:block;
+    position:relative;
+    overflow: hidden;
+    margin:10px;
+    background-size: 100% 100%;
+}
+/*第一张小背景图*/
+.ty-about-img-live{
+    background-image: url(../img/other/live/dream/46.jpg);
+}
+
+/*第二张小背景图*/
+.ty-about-img-study{
+    background-image: url(../img/other/study/176.png);
+}
+
+/*第三张小背景图*/
+.ty-about-img-work{
+    background-image: url(../img/other/work/262.png);
+}
+
+/*第四张小背景图*/
+.ty-about-img-innovate{
+    background-image: url(../img/other/innovate/5.png);
+}
+
+/*第五张小背景图*/
+.ty-about-img-healthy{
+    background-image: url(../img/other/live/dream/2018022707411410058303!s.png);
+}
+
+/*第六张小背景图*/
+.ty-about-img-travel{
+    background-image: url(../img/other/live/dream/2018073003152074666741!s.png);
+}
+
+/*第七张小背景图*/
+.ty-about-img-literature{
+    background-image: url(../img/other/live/dream/2018061821393812099848!s.png);
+}
+
+/*第八张小背景图*/
+.ty-about-img-emotion{
+    background-image: url(../img/other/live/dream/2018012621384853942639!s.png);
+}
+
+/*背景图上面的文本*/
+.sm-bg-text{
+    position:relative;
+    top:48%;
+    overflow: hidden;
+}
+
+.sm-bg-text a{
+    text-decoration: none;
+}
+
+.sm-bg-text div p{
+    font-size: 18px;
+}
+
+.sm-bg-text .sm-text{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.sm-bg-text>a>p{
+    margin-bottom:2rem;
+}
+
+.sm-bg-text div p{
+    margin: 0;
+}
+
+/*小背景图获取焦点样式*/
+.sm-bg-text:hover {
+    position: absolute;
+    top:20px;
+    width:100%;
+    height: 100%;
+    transition: all .5s ease-in-out;
+}
+
+.sm-bg-text::after{
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 1px;
+    left: 50%;
+    background: #fff;
+    background: rgba(255,255,255,.7);
+    top: 70px;
+}
+/*************详情页多选择页特有样式——end****************/
+
+
+
