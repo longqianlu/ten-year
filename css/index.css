@@ -93,6 +93,12 @@
     background:transparent;
     border-radius:10px;
 }
+
+/*登录页面提示文字*/
+.text-login{
+    display: none;
+}
+
 /*忘记密码*/
 .password-content{
     margin-left: 130px;

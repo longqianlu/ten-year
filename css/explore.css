@@ -47,9 +47,13 @@ body{
 }
 
 /*2. 左侧a标记*/
+.ty-nav-btn-content a.ty-nav-btn{
+    width:80px;
+    height:48px;
+    border-bottom-color: #55D4FD !important;
+}
 .ty-nav-btn-content a.ty-nav-btn:hover{
     background:#f7f7f7;
-    border-bottom-color: #55D4FD;
     opacity: 1;
 }
 
@@ -71,6 +75,29 @@ body{
     background-position: center center;
 }
 
+/*头部背景图右上角关闭图标*/
+.ty-back-to-explore{
+    position:absolute;
+    right:-580px;
+    top:-50px;
+    color:#fff;
+    transition: all .3s ease-in-out;
+    z-index: 20;
+}
+
+.ty-channel-title a{
+    text-decoration: none;
+}
+
+.ty-channel-title a:hover{
+    transform:rotate(90deg) ;
+}
+
+.ty-channel-title a:hover .ty-close-icon{
+    transition: all .8s ease-in-out;
+    color:#ccc;
+}
+
 /*页面标题*/
 .ty-channel-title-content{
     width:300px;
@@ -78,6 +105,8 @@ body{
     top:60px;
     margin:0 auto;
 }
+
+
 
 /*标题字体*/
 .ty-channel-title{

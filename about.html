@@ -5,13 +5,493 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/about.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <style>
+        *{
+            border:1px solid red;
+        }
+    </style>
 </head>
 <body>
-<div class="container">
-
+<!--页面内容第一个大图-->
+<div class="text-white ty-about-section-index" id="ty-about-index">
+    <!--页面头部-->
+    <div class="ty-about-header d-flex justify-content-between">
+        <div>
+             <a href="#"><img src="img/about/logo_linght.png" alt=""/></a>
+        </div>
+        <div class="ty-about-login">
+            <a href="" class="text-white ty-about-register m-3">注册</a>
+            <a href="" class="text-white btn">登录</a>
+        </div>
+    </div>
+    <!--页面内容-->
+    <!--页面标题-->
+    <h1 class="text-white font-weight-bold">十年后，你会成为怎样的人</h1>
+    <div class="ty-about-body text-center">
+        <p>十年后是一个基于梦想的经验交流社区。<br>
+            你可以在时间轴上创建未来自己想要实现的梦想，基于这些梦想你可以：</p>
+        <ul>
+            <li>分享你十日后到十年后的追梦经历</li>
+            <li>分享你对人生和梦想的真实思考</li>
+            <li>认识并和各种有趣的人交流</li>
+            <li>找到有助于你实现梦想的最好资源</li>
+        </ul>
+    </div>
+    <!--页面影像-->
+    <div class="ty-about-video">
+        <video src="./img/about/about_video.mp4" autoplay loop></video>
+    </div>
 </div>
+<!--页面内容第二个大图-->
+<div class="ty-about-team text-center" id="team">
+    <p class="middle_text text-dark">
+        跟
+            <span class="ty_color">志同道合</span>
+        的人一起工作
+    </p>
+    <div class="ty-about-desc mt-5">
+        <p>这里是十年后的团队成员，是一群想为这个世界中创造出一些不同的人。我们来自不同的城市和生活，有的人原来在美国念计算机，有的人原来学药学，有的人原来环游中国旅行，做过地产销售顾问，也有的人毕业之后一直在做管理咨询。</p>
+
+        <p>在十年后，我们只关心一件事: 自己所做的事情是否有价值，是否值得未来之人书写。每个人的生命都由无数选择构成，而一起来做这件和梦想有关的事情，是我们最重要的选择之一。We are all dreamers！</p>
+    </div>
+    <div class="ty-about-team-container">
+        <div class="ty-about-team-people ty-about-team-style-1">
+            <a href="" class="ty-people-circle ty-about-team-people-1"></a>
+            <div class="ty-about-people-info text-dark">
+                <h3>
+                    徐晓语
+                    <small>乱点技能树的吃土少女</small>
+                    <p>想成为水草造景大师</p>
+                </h3>
+            </div>
+        </div>
+        <div class="ty-about-team-people ">
+            <a href="" class="ty-people-circle ty-about-team-people-2"></a>
+            <div></div>
+        </div>
+    </div>
+</div>
+<!--页面内容第三个大图-->
+<div class="ty-about-job text-center" id="job">
+    <h2>
+        想一起改变世界吗，来
+        <span class="ty_color">加入我们</span>
+        吧
+    </h2>
+    <p>简历投递邮箱</p>
+    <p>
+        <a href="" class="text-white ty-about-job-email">[ join@10years.me ]</a>
+        <span class="ty-about-job-under"></span>
+    </p>
+    <div class="ty-about-job-container d-flex justify-content-around flex-wrap">
+        <div class="ty-about-job-any">
+            <div class="ty-about-job-summary" id="open1">
+                <div class="ty-about-job-icon text-center">
+                    <img src="img/about/ic_join_mobile.png" alt=""/>
+                    <div class="ty-about-job-icon-circle">
+                        <img src="img/about/ic_join_circle.png" alt=""/>
+                    </div>
+                </div>
+                <div class="ty-about-job-name text-center">
+                    iOS工程师
+                </div>
+            </div>
+            <div class="cover"></div>
+            <div class="ty-about-job-content" id="modal1">
+                <div class="ty-about-job-close text-white">
+                    <a class="ty-close-icon close">×</a>
+                    <div class="ty-about-job-detail">
+                        <h6 class="font-weight-bold">iOS工程师</h6>
+                        <p class="pt-2">10 - 20K</p>
+                        <div class="ty-about-job-introduce">
+                            <p class="mb-1">职业描述：</p>
+                            <ol>
+                                <li>参与十年后项目的iOS客户端的开发，包括 iPhone、iPad。</li>
+                            </ol>
+                            <p class="mb-1 mt-4">职位要求：</p>
+                            <ol>
+                                <li>具备扎实的 Objective-C 基础；</li>
+                                <li>一年以上的 iOS 开发经验，有商业项目开发经验或 App Store上架应用者优先；</li>
+                                <li>善于研究和掌握相关领域内的前沿技术、技术难点及技术趋势；</li>
+                                <li>逻辑思维清晰，有较强的解决问题的能力；</li>
+                                <li>遵守团队的代码格式、代码安全、代码结构规定，编写易读、易维护、高质量、高效率的代码；</li>
+                                <li>有非常强的创新意识，希望通过自己的努力和我们一起创造出互联网世界下一个伟大的产品。</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ty-about-job-any">
+            <div class="ty-about-job-summary" id="open2">
+                <div class="ty-about-job-icon text-center">
+                    <img src="img/about/ic_join_android.png" alt=""/>
+                    <div class="ty-about-job-icon-circle">
+                        <img src="img/about/ic_join_circle.png" alt=""/>
+                    </div>
+                </div>
+                <div class="ty-about-job-name text-center">
+                    Android工程师
+                </div>
+            </div>
+            <div class="cover"></div>
+            <div class="ty-about-job-content" id="modal2">
+                <div class="ty-about-job-close text-white">
+                    <a class="ty-close-icon close">×</a>
+                    <div class="ty-about-job-detail">
+                        <h6 class="font-weight-bold">Android工程师</h6>
+                        <p class="pt-2">10 - 20K</p>
+                        <div class="ty-about-job-introduce">
+                            <p class="mb-1">职业描述：</p>
+                            <ol>
+                                <li>负责十年后项目的Android客户端的开发。</li>
+                            </ol>
+                            <p class="mb-1 mt-4">职位要求：</p>
+                            <ol>
+                                <li>一年以上Android开发经验，具有多个成熟产品开发经验；</li>
+                                <li>熟悉Android OS体系结构，熟悉Android SDK、对Android应用结构有深刻的认识；</li>
+                                <li>熟悉客户端UI控件美化，熟悉网络编程、多线程、图形界面编程，TCP/UDP、HTTP协议；</li>
+                                <li>能独立承担Android产品开发工作；</li>
+                                <li>有社交聊天相关的产品开发经验者优先；</li>
+                                <li>有非常强的创新意识，希望通过自己的努力和我们一起创造出互联网世界下一个伟大的产品。</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ty-about-job-any">
+            <div class="ty-about-job-summary" id="open3">
+                <div class="ty-about-job-icon text-center">
+                    <img src="img/about/ic_join_code.png" alt=""/>
+                    <div class="ty-about-job-icon-circle">
+                        <img src="img/about/ic_join_circle.png" alt=""/>
+                    </div>
+                </div>
+                <div class="ty-about-job-name text-center">
+                    iOS工程师
+                </div>
+            </div>
+            <div class="cover"></div>
+            <div class="ty-about-job-content" id="modal3">
+                <div class="ty-about-job-close text-white">
+                    <a class="ty-close-icon close">×</a>
+                    <div class="ty-about-job-detail">
+                        <h6 class="font-weight-bold">Web前端工程师</h6>
+                        <p class="pt-2">10 - 20K</p>
+                        <div class="ty-about-job-introduce">
+                            <p class="mb-1">职业描述：</p>
+                            <ol>
+                                <li>负责十年后项目的web的开发。</li>
+                                <li>负责十年后项目推广HTML5页面的开发。</li>
+                            </ol>
+                            <p class="mb-1 mt-4">职位要求：</p>
+                            <ol>
+                                <li>熟悉JavaScript、JQuery、HTML5/CSS和Ajax技术。能手写符合w3c标准的前端代码；</li>
+                                <li>熟练掌握smarty、JavaScript、XML等知识；</li>
+                                <li>有个人或团队合作的项目开发经验（包括大型的课程作业或商业项目）；</li>
+                                <li>遵守团队的代码格式、代码安全、代码结构规定，编写易读、易维护、高质量、高效率的代码；</li>
+                                <li>有非常强的创新意识，希望通过自己的努力和我们一起创造出互联网世界下一个伟大的产品。</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ty-about-job-any">
+            <div class="ty-about-job-summary" id="open4">
+                <div class="ty-about-job-icon text-center">
+                    <img src="img/about/ic_join_pc.png" alt=""/>
+                    <div class="ty-about-job-icon-circle">
+                        <img src="img/about/ic_join_circle.png" alt=""/>
+                    </div>
+                </div>
+                <div class="ty-about-job-name text-center">
+                    iOS工程师
+                </div>
+            </div>
+            <div class="cover"></div>
+            <div class="ty-about-job-content" id="modal4">
+                <div class="ty-about-job-close text-white">
+                    <a class="ty-close-icon close">×</a>
+                    <div class="ty-about-job-detail">
+                        <h6 class="font-weight-bold">CTO / Web后端工程师</h6>
+                        <p class="pt-2">10 - 20K</p>
+                        <div class="ty-about-job-introduce">
+                            <p class="mb-1">职业描述：</p>
+                            <ol>
+                                <li>负责后端服务的技术开发工作，网页与移动端接口的开发维护和调试;</li>
+                                <li>规范与负责公司产品主要应用和功能模块的需求整理，制定文档撰写的规范、维护文档的编定；</li>
+                                <li>管理5-10人左右的技术团队，建立技术团队的协作模式、进度管理机制、绩效考评机制以及激励机制；</li>
+                            </ol>
+                            <p class="mb-1 mt-4">职位要求：</p>
+                            <ol>
+                                <li>至少熟练掌握一种PHP主流框架(CI、ThinkPHP、Yii)，写过REST、SOAP、RPC WEB服务；</li>
+                                <li>熟练编写各种SQL语句，有数据库索引、性能优化经验；使用过PostgreSQL、Memcache加分；</li>
+                                <li>会常用的Linux命令，会编写简单的shell脚本加分，熟悉apache和nginx配置加分；</li>
+                                <li>逻辑思维清晰，有较强的解决问题的能力；</li>
+                                <li>其他加分项：有个人独立博客；有Github账号；有高访问量网站开发经验；</li>
+                                <li>有非常强的创新意识，希望通过自己的努力和我们一起创造出互联网世界下一个伟大的产品。</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ty-about-job-any">
+            <div class="ty-about-job-summary" id="open5">
+                <div class="ty-about-job-icon text-center">
+                    <img src="img/about/ic_join_ue.png" alt=""/>
+                    <div class="ty-about-job-icon-circle">
+                        <img src="img/about/ic_join_circle.png" alt=""/>
+                    </div>
+                </div>
+                <div class="ty-about-job-name text-center">
+                    iOS工程师
+                </div>
+            </div>
+            <div class="cover"></div>
+            <div class="ty-about-job-content" id="modal5">
+                <div class="ty-about-job-close text-white">
+                    <a class="ty-close-icon close">×</a>
+                    <div class="ty-about-job-detail">
+                        <h6 class="font-weight-bold">高级交互设计师
+                        </h6>
+                        <p class="pt-2">10 - 20K</p>
+                        <div class="ty-about-job-introduce">
+                            <p class="mb-1">职业描述：</p>
+                            <ol>
+                                <li>参与十年后项目网页端以及移动端的交互界面设计工作（以移动端为主）。</li>
+                            </ol>
+                            <p class="mb-1 mt-4">职位要求：</p>
+                            <ol>
+                                <li>一年以上互联网视觉设计经验，有丰富移动端设计经验优先；</li>
+                                <li>有好奇心、创造力和激情，对流行和趋势有敏锐观察力并能体现到作品当中；</li>
+                                <li>丰富的视觉表现力，精通色彩、图形、信息和 gui 设计原则及方法；</li>
+                                <li>对交互设计和用户体验有较深理解，能对原型快速有效的解读并能完整准确的还原信息层级和关系，能运用设计手法满足产品；</li>
+                                <li>熟练使用PPT、AXURE、EXCLE、Mind Manager、PS等软件；</li>
+                                <li>简历请附作品（网页或软件交互设计相关作品，可发至join#10years.me, #换成@）</li>
+                                <li>有非常强的创新意识，希望通过自己的努力和我们一起创造出互联网世界下一个伟大的产品。</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ty-about-job-any">
+            <div class="ty-about-job-summary" id="open6">
+                <div class="ty-about-job-icon text-center">
+                    <img src="img/about/ic_join_ps.png" alt=""/>
+                    <div class="ty-about-job-icon-circle">
+                        <img src="img/about/ic_join_circle.png" class="ic-join"/>
+                    </div>
+                </div>
+                <div class="ty-about-job-name text-center">
+                    iOS工程师
+                </div>
+            </div>
+            <div class="cover"></div>
+            <div class="ty-about-job-content" id="modal6">
+                <div class="ty-about-job-close text-white">
+                    <a class="ty-close-icon close">×</a>
+                    <div class="ty-about-job-detail">
+                        <h6 class="font-weight-bold">社区运营</h6>
+                        <p class="pt-2">8 - 15K</p>
+                        <div class="ty-about-job-introduce">
+                            <p class="mb-1">职业描述：</p>
+                            <ol>
+                                <li>十年后网站与移动端应用的日常运营、内容编辑和活动运营；</li>
+                                <li>对运营数据作分析和用户行为跟踪，及时根据用户对内容的需求和反馈进行运营推广策略调整；</li>
+                                <li>负责用户、内容、活动等方面的运营，构建良好的社区氛围，提升用户活跃度；</li>
+                                <li>建立核心用户对网站的深度参与，并建立项目与团队粉丝氛围，实现与核心用户的良性互动；</li>
+                            </ol>
+                            <p class="mb-1 mt-4">职位要求：</p>
+                            <ol>
+                                <li>一年以上互联网产品运营和用户运营经验；</li>
+                                <li>具有较好的专题策划能力和活动策划能力，能够独立完成项目策划书，并且推动执行；</li>
+                                <li>有较强的沟通能力，能够引导和辅助引导用户行为；</li>
+                                <li>熟悉行业内各产品和运营发展状况，能够提出具有前瞻性的运营想法；</li>
+                                <li>有优秀的协作组织能力，有高度的责任心以及较强的推动能力，具备较好的危机解决能力；</li>
+                                <li>有移动互联网及社区运营经验者优先；</li>
+                                <li>有非常强的创新意识，希望通过自己的努力和我们一起创造出互联网世界下一个伟大的产品。</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--页面内容第四个大图-->
+<div class="ty-about-report" id="report">
+    <h2 class="text-center">
+        关于我们的
+        <span class="ty_color">媒体报道</span>
+    </h2>
+    <div class="ty-about-report-container">
+        <div class="ty-about-report-carousel carousel" id="slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active ty-about-report-slide float-left">
+                    <a href="#">
+                        <img src="img/about/ic_logo_pw.png" alt=""/>
+                    </a>
+                    <h3>
+                        <a href="" class="text-dark font-weight-bold">我们能否依靠“梦想”构筑社交平台？</a>
+                    </h3>
+                    <p class="small_text text-muted">
+                        在社交信息越来越发达、越来越爆炸之后，始终有一种声音，认为现有的社交形式和内容对个人的发展没有过多的好处，速食、碎片化信息、未经证实的信息、负面信息等等因素让用户越来越难从社交网路上获得有益的信息。而在这样的背景之下，梦想这件事时常被反复提出，在个人成长、尤其是中国的文化背景下不能抛弃对未来的规划和对梦想的追求。基于这点，一些服务和应用开始从“梦想”“未来”出发，建立新的社交形式，而这样的社交平台能否被大众所接受呢？
+                    </p>
+                </div>
+                <div class="carousel-item ty-about-report-slide float-left">
+                    <a href="#">
+                        <img src="img/about/ic_logo_technode.png" alt=""/>
+                    </a>
+                    <h3>
+                        <a href="" class="text-dark font-weight-bold">梦想社交“十年后”，希望将社交从线上向线下拓展</a>
+                    </h3>
+                    <p class="small_text text-muted">
+                        “十年后” 是几个复旦毕业生出自切身感受和需求，一同创立的基于梦想的私密社交网络。它要让你放心大胆地思考未来说出你的梦想，并且为之订立不同的短期中长期目标，并和有类似目标的人群一起互相鼓励实现梦想。
+                    </p>
+                </div>
+                <div class="carousel-item ty-about-report-slide float-left">
+                    <a href="#">
+                        <img src="img/about/ic_logo_itjuzi.png" alt=""/>
+                    </a>
+                    <h3>
+                        <a href="" class="text-dark font-weight-bold">十年后</a>
+                    </h3>
+                    <p class="small_text text-muted">
+                        十年后是一个基于未来时间的社交网络，每个人可以在未来时间轴上创建最多8个盒子记录自己的想法等信息。上海秦誓网络科技有限公司旗下产品。
+                    </p>
+                </div>
+                <div class="carousel-item ty-about-report-slide float-left">
+                    <a href="#">
+                        <img src="img/about/ic_logo_cyzone.png" alt=""/>
+                    </a>
+                    <h3>
+                        <a href="" class="text-dark font-weight-bold">做梦不易：未来社交网络“十年后”</a>
+                    </h3>
+                    <p class="small_text text-muted">
+                        “十年后”是一个“做梦”的网站，用户可以在这个网站上分享自己的想法、计划或者资料，制作自己的梦想时间轴。这个网站想做的，就是提醒你不要忘记最初的梦想：十年后，你要成为你想成为的那个人。
+                    </p>
+                </div>
+                <div class="carousel-item ty-about-report-slide float-left">
+                    <a href="#">
+                        <img src="img/about/ic_logo_iheima.png" alt=""/>
+                    </a>
+                    <h3>
+                        <a href="" class="text-dark font-weight-bold">奶茶妹妹免费推广的未来社交应用“十年后” 今宣布获得数百万天使轮融资</a>
+                    </h3>
+                    <p class="small_text text-muted">
+                        “十年后”是一个基于未来时间轴的社交网络，把时间“可视化”，让人们记录和分享关于未来的梦想，并和有趣的人进行交流。其于2014年3月入驻上海顶尖的科技创业孵化器Innospace并得到种子轮融资。今日宣布获得创新谷VC数百万元天使轮融资，资金已全部到账。
+                    </p>
+                </div>
+            </div>
+            <a href="#slide" class="carousel-control-prev"
+               data-slide="prev">
+                <img src="img/about/ic_arrow_left.png" alt=""/>
+            </a>
+            <a href="#slide" class="carousel-control-next" data-slide="next">
+                <img src="img/about/ic_arrow_right.png" alt=""/>
+            </a>
+        </div>
+    </div>
+</div>
+<!--页面内容第五个大图-->
+<div class="ty-about-contact">
+    <h2 class="text-center">
+        和我们交流你关于十年后的
+        <span class="ty_color">任何想法</span>
+    </h2>
+    <div class="ty-about-contact-container">
+        <ul class="nav nav-tabs justify-content-around ty-about-share ">
+            <li class="nav-item">
+                <a class="nav-link active weibo" href="#tab1" data-toggle="tab"></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link wechat" href="#tab2" data-toggle="tab"></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link renren" href="#tab3" data-toggle="tab"></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mail" href="#tab4" data-toggle="tab"></a>
+            </li>
+        </ul>
+        <!-- 内容部分-->
+        <div class="tab-content">
+            <div class="tab-pane active" id="tab1">万磁王.</div>
+            <div class="tab-pane" id="tab2">北极星</div>
+            <div class="tab-pane" id="tab3">镭射眼</div>
+            <div class="tab-pane" id="tab4">黑凤凰</div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $("#open1").click(function() {
+        $(".cover")[0].style.display="block";   //显示遮罩层
+        $("#modal1")[0].style.display="block";   //显示弹出层
+    })
+    $(".close").click(function(){
+        $(".cover")[0].style.display="none";   //隐藏遮罩层
+        $("#modal1")[0].style.display="none";   //隐藏弹出层
+    })
+
+
+    $("#open2").click(function() {
+        $(".cover")[0].style.display="block";   //显示遮罩层
+        $("#modal2")[0].style.display="block";   //显示弹出层
+    })
+    $(".close").click(function(){
+        $(".cover")[0].style.display="none";   //隐藏遮罩层
+        $("#modal2")[0].style.display="none";   //隐藏弹出层
+    })
+
+
+    $("#open3").click(function() {
+        $(".cover")[0].style.display="block";   //显示遮罩层
+        $("#modal3")[0].style.display="block";   //显示弹出层
+    })
+    $(".close").click(function(){
+        $(".cover")[0].style.display="none";   //隐藏遮罩层
+        $("#modal3")[0].style.display="none";   //隐藏弹出层
+    })
+
+
+    $("#open4").click(function() {
+        $(".cover")[0].style.display="block";   //显示遮罩层
+        $("#modal4")[0].style.display="block";   //显示弹出层
+    })
+    $(".close").click(function(){
+        $(".cover")[0].style.display="none";   //隐藏遮罩层
+        $("#modal4")[0].style.display="none";   //隐藏弹出层
+    })
+
+
+    $("#open5").click(function() {
+        $(".cover")[0].style.display="block";   //显示遮罩层
+        $("#modal5")[0].style.display="block";   //显示弹出层
+    })
+    $(".close").click(function(){
+        $(".cover")[0].style.display="none";   //隐藏遮罩层
+        $("#modal5")[0].style.display="none";   //隐藏弹出层
+    })
+
+
+    $("#open6").click(function() {
+        $(".cover")[0].style.display="block";   //显示遮罩层
+        $("#modal6")[0].style.display="block";   //显示弹出层
+    })
+    $(".close").click(function(){
+        $(".cover")[0].style.display="none";   //隐藏遮罩层
+        $("#modal6")[0].style.display="none";   //隐藏弹出层
+    })
+</script>
 </body>
+
 </html>

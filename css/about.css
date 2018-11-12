@@ -1,0 +1,531 @@
+body{
+    overflow-x: hidden;
+    height:100%;
+    line-height: 1;
+}
+
+/*页面第一个大图*/
+#ty-about-index{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    position: relative;
+}
+
+/*页面header*/
+.ty-about-header{
+    width:100%;
+    margin:0 auto;
+    height:60px;
+    padding-top: 30px;
+    z-index: 20;
+}
+
+/*左侧logo*/
+.ty-about-header img{
+    width:145px;
+    height:40px;
+    margin-left: 200px;
+}
+
+/*去掉a标签样式*/
+.ty-about-header div a{
+    text-decoration: none;
+}
+
+/*右侧注册登录*/
+.ty-about-header .ty-about-login a{
+    font-size: 14px;
+    border:1px solid #fff;
+    width:60px;
+    height:35px;
+    margin-right:200px;
+}
+
+/*注册特有样式*/
+.ty-about-header .ty-about-register{
+    border:none !important;
+}
+
+
+/*主体段落文字部分*/
+.ty-about-body{
+    width: 500px;
+    left: 50%;
+    margin-left: -250px;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    line-height: 28px;
+    margin-top: 160px;
+    font-size: 15px;
+}
+
+.ty-about-body ul{
+    position: relative;
+    margin: 10px 0 0 120px;
+}
+
+.ty-about-body ul li{
+    text-align: left;
+}
+
+/*背景影像*/
+.ty-about-video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+/*页面大图——影像背景和透明度*/
+.ty-about-video video{
+    position:absolute;
+    left:50%;
+    top: 120%;
+    margin-left:-960px;
+    margin-top: -500px;
+    width:1920px;
+    height:1080px;
+}
+
+/*影像上面的透明度*/
+.ty-about-video::after{
+    position: absolute;
+    width: 100%;
+    content: '';
+    height:855px;
+    background: #061742;
+    opacity: .3;
+    top: 0;
+    left: 0;
+}
+
+/*页面大标题*/
+.ty-about-header+h1{
+    margin-top:100px;
+    text-align: center;
+}
+
+
+
+/*页面第二大模块*/
+.ty-about-team{
+    color:#333;
+    height:640px;
+    position:relative;
+    background:#fff;
+    border:1px solid #fff;
+    top:400px;
+}
+
+/*大标题*/
+.ty-about-team p{
+    font-size: 40px;
+    margin-top:60px;
+}
+
+/*小文字*/
+.ty-about-desc{
+    max-width:900px;
+    margin:0 auto;
+    padding:0 30px;
+    line-height: 1.6;
+}
+.ty-about-desc p{
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+/*人物内容*/
+.ty-about-team-container{
+    position: relative;
+    max-width: 900px;
+    height:250px;
+    margin:50px auto;
+    padding:0 30px;
+    border:1px solid red;
+}
+
+/*15个人物头像*/
+.ty-about-team-people{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border:1px solid red;
+    background: #eee;
+    transition: all .4s ease-in-out;
+    animation:.4s ease-in-out forwards;
+}
+
+/*隐藏的文字块*/
+.ty-about-people-info{
+    position: absolute;
+    width:0;
+    left:0;
+    height: 80px;
+    padding-left:80px;
+    background: #eee;
+    border-radius: 40px;
+    overflow: hidden;
+    transition:all 0.4s ease-in-out;
+}
+
+.ty-about-people-info>h3 {
+    color: #555;
+    margin: 10px 0 5px;
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 5px;
+    width: 150px;
+}
+
+.ty-about-people-info>h3>small {
+    display: block;
+    color: #999;
+    font-size: 13px;
+    margin-top: 5px;
+    width: 150px;
+}
+
+.ty-about-people-info p{
+    padding-left: 5px;
+    margin-top: 10px;
+    font-size: 14px;
+    width: 150px;
+}
+/*隐藏文字块hover出现样式*/
+.ty-about-team-people:hover .ty-about-people-info{
+    padding-left:80px;
+    width:250px;
+    transition:all 0.4s ease-in-out;
+    background: #fff;
+    box-shadow:0 0 3px 3px #eee ;
+}
+
+.ty-people-circle{
+    position: absolute;
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    left: 7px;
+    top: 7px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 999;
+}
+
+/*15个人物头像*/
+.ty-about-team-style-1{
+    position:absolute;
+    left:50%;
+    top:35%;
+}
+.ty-about-team-people-1{
+    background-image: url(../img/about/30-024946_994.jpg);
+}
+
+.ty-about-team-people-2{
+    background-image: url(../img/about/20140907103514_zaicd.thumb.224_0.jpeg);
+}
+
+
+
+
+/*页面第三个大图*/
+.ty-about-job{
+    position:relative;
+    top:400px;
+    color:#fff;
+    border-top:1px solid #fff;
+    height:610px;
+    background:url(../img/about/img_about_bg2.jpg) 0/cover no-repeat;
+}
+
+/*页面标题*/
+.ty-about-job>h2{
+    position:relative;
+    max-width: 800px;
+    font-size: 40px;
+    padding-top: 60px;
+    z-index: 99999;
+    margin: 0 auto 20px;
+}
+
+/*标题下面的文字介绍*/
+.ty-about-job p{
+    position: relative;
+    font-size: 16px;
+    z-index: 99999;
+}
+
+.ty-about-job p a{
+    text-decoration: none;
+}
+
+/*文字介绍hover时下面span的样式*/
+.ty-about-job-under{
+    position: absolute;
+    width:0;
+    height:5px;
+    background-color:red;
+    bottom:-5px;
+    left:0;
+    transition:0.5s;
+    margin-left:50%;
+    display: block;
+}
+
+.ty-about-job-email:hover .ty-about-job-under{
+    width:100%;
+    margin-left:0;
+}
+/*页面主要内容*/
+.ty-about-job-container{
+    max-width: 1000px;
+    margin:30px auto;
+}
+
+/*每个模板的背景色和高宽、位置*/
+.ty-about-job-any{
+    width:300px;
+    height:150px;
+    margin-top: 30px;
+    border:1px solid red;
+    background: rgba(255,255,255,.3);
+}
+
+/*模板里的图片——圆和图标*/
+.ty-about-job-icon{
+    position:relative;
+    padding:15px 0 30px;
+    line-height: 80px;
+}
+
+/*圆*/
+.ty-about-job-icon-circle{
+    position:absolute;
+    top:15px;
+    left:50%;
+    margin-left: -35px;
+    transition: transform .8s ease-in-out;
+}
+
+/*图片下的工作名称*/
+.ty-about-job-name{
+    font-size: 13px;
+    margin-top: -15px;
+}
+
+/*圆的hover样式*/
+.ty-about-job-icon-circle>img{
+    transition: transform .8s ease-in-out;
+}
+.ty-about-job-any:hover .ty-about-job-icon-circle>img{
+    transform: rotate(360deg);
+}
+
+/*点击隐藏模块的内容*/
+.ty-about-job-content{
+    position:absolute;
+    background: rgba(0,0,0,.6);
+}
+
+.cover{
+    /*底层遮罩元素*/
+    position:absolute;/*元素的定位类型*/
+    left:0;
+    top:0;
+    background:rgba(0, 0, 0, 0.4);
+    width:100%;  /*宽度设置为100%，这样才能使隐藏背景层覆盖原页面*/
+    height:100%;
+    opacity:0.6;/*透明度*/
+    display:none; /**/
+    z-Index:999;  /*层级关系*/
+}
+#modal1,#modal2,#modal3,#modal4,#modal5,#modal6{
+    position:absolute;
+    width:100%;
+    height:600px;
+    display:none;
+    z-Index:9999;
+    left:0;
+    top:0;
+}
+
+/*详情介绍*/
+.ty-about-job-content a{
+    text-decoration: none;
+}
+
+/*详情介绍内容*/
+.ty-about-job-detail{
+   position:absolute;
+   top:240px;
+   left:340px;
+   max-width: 670px;
+   font-size: 13px;
+   text-align: left;
+}
+
+.ty-about-job-detail p{
+    font-size: 13px;
+}
+
+.ty-about-job-detail ol li{
+    padding:3px 0;
+    margin-left: -10px;
+}
+
+/*隐藏模块关闭按钮*/
+.ty-close-icon{
+    margin-right:20px;
+    margin-top:10px;
+}
+
+.ty-close-icon:hover{
+    transform:rotate(90deg) ;
+    transition: all .8s ease-in-out;
+    color:#ccc;
+}
+
+
+
+/*页面第四个大图*/
+.ty-about-report{
+    position: relative;
+    top:400px;
+    height:500px;
+    border-bottom-color: #eee;
+}
+
+/*第四个大图的大标题*/
+.ty-about-report>h2{
+    position: relative;
+    padding-top:60px;
+}
+
+/*轮播图文*/
+.ty-about-report-carousel{
+    position: relative;
+    max-width: 1000px;
+    overflow: hidden;
+    height:250px;
+    margin: 80px auto 0;
+}
+
+/*每个小图片*/
+.carousel-inner{
+    position: absolute;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    display: table-cell;
+    text-align: center;
+    background: #fff;
+    left:0;
+    top: 0;
+}
+
+.ty-about-report-slide{
+    margin:70px 38%;
+    line-height: 108px;
+    width:218px;
+    height: 108px;
+    overflow: hidden;
+}
+
+.ty-about-report-slide h3{
+    width:320px;
+    font-size: 16px;
+    height:16px;
+    margin:0 auto 20px;
+    overflow: hidden;
+}
+
+.ty-about-report-slide p{
+    line-height: 1.4;
+    height:56px;
+    width:328px;
+    margin:0 auto;
+    overflow: hidden;
+}
+
+.ty-about-report-carousel>a{
+    position:absolute;
+    width:40px;
+    height:230px;
+    background:#fff;
+    top:10px;
+}
+
+.ty-about-report-carousel>a:hover{
+    background:#eee;
+}
+
+
+/*页面第五个大图*/
+.ty-about-contact{
+    position:relative;
+    top:400px;
+    height:550px;
+    border-bottom-color: #eee;
+    background:url(../img/about/ic_about_contact.png) center/80% no-repeat;
+}
+
+/*第五个大图大标题*/
+.ty-about-contact>h2{
+    padding-top: 60px;
+}
+
+/*页面内容*/
+.ty-about-contact-container{
+    width:600px;
+    margin:0 auto;
+}
+
+/*四个动态导航*/
+.ty-about-share{
+    height:120px;
+    margin:40px 0;
+    line-height: 90px;
+}
+
+/*动态导航4张背景图片大小*/
+.ty-about-share li a{
+    text-align: center;
+    height:100%;
+    width:60px;
+    background-size: 60px 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image .5s ease-in-out;
+}
+
+/*4张背景图*/
+.ty-about-share .weibo{
+    background-image: url(../img/about/ic_contact_weibo.png);
+    background-color: #00b4ff;
+}
+
+.ty-about-share .wechat{
+    background-image: url(../img/about/ic_contact_weixin.png);
+}
+
+.ty-about-share .renren{
+    background-image: url(../img/about/ic_contact_renren.png);
+}
+
+.ty-about-share .mail{
+    background-image: url(../img/about/ic_contact_mail.png);
+}
+
+.ty-about-share li a.active{
+    background:#55D4FD;
+}

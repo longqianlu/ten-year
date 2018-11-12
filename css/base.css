@@ -36,9 +36,3 @@ body{
 .ty-bg-color{
     background:#55D4FD;
 }
-/*a标签去掉样式*/
-
-.text-none{
-    text-decoration: none;
-}
-
