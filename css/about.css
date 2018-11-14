@@ -402,7 +402,6 @@ body{
     position: relative;
     top:400px;
     height:500px;
-    border-bottom-color: #eee;
 }
 
 /*第四个大图的大标题*/
@@ -475,7 +474,6 @@ body{
     position:relative;
     top:400px;
     height:550px;
-    border-bottom-color: #eee;
     background:url(../img/about/ic_about_contact.png) center/80% no-repeat;
 }
 
@@ -498,34 +496,287 @@ body{
 }
 
 /*动态导航4张背景图片大小*/
-.ty-about-share li a{
+.ty-about-share a{
+    display: inline-block;
     text-align: center;
-    height:100%;
-    width:60px;
-    background-size: 60px 60px;
-    background-position: center;
-    background-repeat: no-repeat;
+    height:120px;
+    width:145px;
     transition: background-image .5s ease-in-out;
 }
 
-/*4张背景图*/
-.ty-about-share .weibo{
-    background-image: url(../img/about/ic_contact_weibo.png);
-    background-color: #00b4ff;
+/*4张背景图——静态、hover*/
+/*第一张——微博*/
+.ty-about-share a.weibo{
+    width:60px;
+    height:60px;
+    background:url(../img/about/ic_contact_weibo.png) 0/cover no-repeat;
 }
 
-.ty-about-share .wechat{
-    background-image: url(../img/about/ic_contact_weixin.png);
+.ty-about-share a.weibo:hover{
+    cursor: pointer;
+    width:60px;
+    height:60px;
+    background:url(../img/about/ic_contact_weibo_hover.png) 0/cover no-repeat;
 }
 
-.ty-about-share .renren{
-    background-image: url(../img/about/ic_contact_renren.png);
+
+/*第二张——微信*/
+.ty-about-share a.wechat{
+    width:60px;
+    height:60px;
+    background:url(../img/about/ic_contact_weixin.png) 0/cover no-repeat;
 }
 
-.ty-about-share .mail{
-    background-image: url(../img/about/ic_contact_mail.png);
+.ty-about-share a.wechat:hover{
+    cursor: pointer;
+    width:60px;
+    height:60px;
+    background:url(../img/about/ic_contact_weixin_ahover.png) 0/cover no-repeat;
 }
 
-.ty-about-share li a.active{
-    background:#55D4FD;
+
+/*第三张——人人*/
+.ty-about-share a.renren{
+    width:60px;
+    height:60px;
+    background:url(../img/about/ic_contact_renren.png) 0/cover no-repeat;
+}
+
+.ty-about-share a.renren:hover{
+    cursor: pointer;
+    width:60px;
+    height:60px;
+    background:url(../img/about/ic_contact_renren_hover.png) 0/cover no-repeat;
+}
+
+
+/*第四张——邮箱*/
+.ty-about-share a.mail{
+    width:60px;
+    height:60px;
+    background:url(../img/about/ic_contact_mail.png) 0/cover no-repeat;
+}
+
+.ty-about-share a.mail:hover{
+    cursor: pointer;
+    width:60px;
+    height:60px;
+    background:url(../img/about/ic_contact_mail_ahover.png) 0/cover no-repeat;
+}
+
+
+/*4个图标事件*/
+.ty-about-contact-show{
+    width:540px;
+    height:200px;
+    margin:-38px auto 0;
+    background: #fff;
+}
+
+/*4个图标所隐藏的商品介绍*/
+.ty-about-contact-show>div{
+    color:#777;
+    opacity: 0;
+    transition: all .4s ease-in-out;
+    position: absolute;
+    width: 540px;
+    text-align: center;
+    padding:40px 20px;
+    box-shadow:0 0 3px 3px #eee;
+}
+
+/*商品介绍未隐藏的模块*/
+.ty-about-contact-show .show{
+    opacity: 1;
+}
+
+/*未隐藏模块的内容*/
+.ty-about-contact-show1>p{
+    position: relative;
+    font-size: 16px;
+    margin: 20px 30px;
+    line-height: 1.5;
+}
+
+.ty-about-contact-show1>p>span{
+    font-size: 36px;
+}
+
+
+/*文字前后追加的特殊样式*/
+.ty-about-contact-show1>p::before,.ty-about-contact-show1>p::after{
+    content: 'â€œ';
+    position: absolute;
+    font-size: 50px;
+    color: #777;
+    margin-left: -20px;
+    margin-top: -15px;
+}
+
+.ty-about-contact-show1>p::after{
+    content:"â€";
+    margin-left:0;
+    margin-top: -30px;
+}
+
+
+/*商品介绍——左*/
+.ty-about-share-detail-left{
+    width:160px;
+    text-align: center;
+    float: left;
+}
+.ty-about-share-detail-left>a{
+    margin:0;
+    padding:0;
+    vertical-align: baseline;
+}
+
+.ty-about-contact-show5>a{
+    text-decoration: none;
+}
+
+.ty-about-contact-show5>a span{
+    font-size: 30px;
+}
+
+.ty-about-contact-show5{
+    height:200px;
+    line-height: 100px;
+}
+
+/*商品介绍左——图片*/
+.ty-about-contact-show>div img{
+    width:120px;
+    height:120px;
+}
+
+/*商品介绍左——隐藏的第五个板块的图片*/
+.ty-about-contact-show5 a img{
+    width:30px;
+    height:23px;
+}
+
+
+/*商品介绍——右*/
+.ty-about-share-detail-right{
+    position: relative;
+    padding-left: 200px;
+    height:100%;
+    color:#777;
+}
+
+
+/*商品介绍右——文字*/
+.ty-about-share-detail-right p{
+    font-size: 16px;
+    margin-bottom: 0;
+    line-height: 1.7;
+}
+
+
+/*商品介绍右——文字中间隔开的量条小线条*/
+.ty-about-share-detail-right .row::before{
+    position: absolute;
+    content: '';
+    height: 16px;
+    width: 1px;
+    background: #777;
+    left: 280px;
+    top: 80px;
+}
+
+.ty-about-share-detail-right .row::after{
+    content: "";
+    width:1px;
+    height:16px;
+    position: absolute;
+    background: #777;
+    top:80px;
+    left:380px;
+}
+
+
+/*上——文字展示模块上的小三角*/
+.ty-about-contact-show1::after{
+    position:absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-bottom-color: #fff;
+    top: -40px;
+    left: 50%;
+    margin-left: -20px;
+    transition: all .4s ease-in-out;
+}
+
+.ty-about-contact-show2::after{
+    position:absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-bottom-color: #fff;
+    top: -40px;
+    left: 5%;
+    margin-left: -20px;
+    transition: all .4s ease-in-out;
+}
+
+.ty-about-contact-show2::after{
+    position:absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-bottom-color: #fff;
+    top: -40px;
+    left: 8%;
+    margin-left: -20px;
+    transition: all .4s ease-in-out;
+}
+
+.ty-about-contact-show3::after{
+    position:absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-bottom-color: #fff;
+    top: -40px;
+    left: 38%;
+    margin-left: -20px;
+    transition: all .4s ease-in-out;
+}
+
+.ty-about-contact-show4::after{
+    position:absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-bottom-color: #fff;
+    top: -40px;
+    left: 65%;
+    margin-left: -20px;
+    transition: all .4s ease-in-out;
+}
+
+.ty-about-contact-show5::after{
+    position:absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-bottom-color: #fff;
+    top: -40px;
+    left:90%;
+    margin-left: -20px;
+    transition: all .4s ease-in-out;
+}
+
+/*显示的模块*/
+.ty-about-contact-show1::before{
+
 }

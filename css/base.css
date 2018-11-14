@@ -11,6 +11,9 @@ body{
 .small_text{
     font-size:13px;
 }
+.muted-text{
+    font-size: 14px !important;
+}
 .bg-text{
     font-size: 20px;
 }
