@@ -11,9 +11,6 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <style>
-        *{
-            border:1px solid red;
-        }
     </style>
 </head>
 <body>
@@ -49,16 +46,19 @@
 </div>
 <!--页面内容第二个大图-->
 <div class="ty-about-team text-center" id="team">
+    <!--上：大标题-->
     <p class="middle_text text-dark">
         跟
             <span class="ty_color">志同道合</span>
         的人一起工作
     </p>
+    <!--中：文字简介-->
     <div class="ty-about-desc mt-5">
         <p>这里是十年后的团队成员，是一群想为这个世界中创造出一些不同的人。我们来自不同的城市和生活，有的人原来在美国念计算机，有的人原来学药学，有的人原来环游中国旅行，做过地产销售顾问，也有的人毕业之后一直在做管理咨询。</p>
 
         <p>在十年后，我们只关心一件事: 自己所做的事情是否有价值，是否值得未来之人书写。每个人的生命都由无数选择构成，而一起来做这件和梦想有关的事情，是我们最重要的选择之一。We are all dreamers！</p>
     </div>
+    <!--下：15个人物简介-->
     <div class="ty-about-team-container">
         <div class="ty-about-team-people ty-about-team-style-1">
             <a href="" class="ty-people-circle ty-about-team-people-1"></a>
@@ -78,16 +78,19 @@
 </div>
 <!--页面内容第三个大图-->
 <div class="ty-about-job text-center" id="job">
+    <!--上：大标题-->
     <h2>
         想一起改变世界吗，来
         <span class="ty_color">加入我们</span>
         吧
     </h2>
+    <!--中：投简历邮箱链接-->
     <p>简历投递邮箱</p>
     <p>
         <a href="" class="text-white ty-about-job-email">[ join@10years.me ]</a>
         <span class="ty-about-job-under"></span>
     </p>
+    <!--下：6个工作详情模块-->
     <div class="ty-about-job-container d-flex justify-content-around flex-wrap">
         <div class="ty-about-job-any">
             <div class="ty-about-job-summary" id="open1">
@@ -329,10 +332,12 @@
 </div>
 <!--页面内容第四个大图-->
 <div class="ty-about-report" id="report">
+    <!--上：大标题-->
     <h2 class="text-center">
         关于我们的
         <span class="ty_color">媒体报道</span>
     </h2>
+    <!--下：轮播事件-->
     <div class="ty-about-report-container">
         <div class="ty-about-report-carousel carousel" id="slide" data-ride="carousel">
             <div class="carousel-inner">
@@ -404,31 +409,83 @@
 </div>
 <!--页面内容第五个大图-->
 <div class="ty-about-contact">
+    <!--上：大标题-->
     <h2 class="text-center">
         和我们交流你关于十年后的
         <span class="ty_color">任何想法</span>
     </h2>
     <div class="ty-about-contact-container">
-        <ul class="nav nav-tabs justify-content-around ty-about-share ">
-            <li class="nav-item">
-                <a class="nav-link active weibo" href="#tab1" data-toggle="tab"></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link wechat" href="#tab2" data-toggle="tab"></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link renren" href="#tab3" data-toggle="tab"></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link mail" href="#tab4" data-toggle="tab"></a>
-            </li>
-        </ul>
-        <!-- 内容部分-->
-        <div class="tab-content">
-            <div class="tab-pane active" id="tab1">万磁王.</div>
-            <div class="tab-pane" id="tab2">北极星</div>
-            <div class="tab-pane" id="tab3">镭射眼</div>
-            <div class="tab-pane" id="tab4">黑凤凰</div>
+        <!--中：四个小图标-->
+        <div class="ty-about-share d-flex justify-content-around">
+            <a class="weibo" ></a>
+
+            <a class="wechat" ></a>
+
+            <a class="renren"></a>
+
+            <a class="mail" ></a>
+        </div>
+        <!-- 下：四个小图标内容部分-->
+        <div class="d-flex justify-content-between ty-about-contact-show">
+            <div class="show ty-about-contact-show1">
+                <p><span class="text-dark">如</span>果你对「十年后」有任何建议，或乐意和我们交流关于未来、人生和社交网络的理念的,请通过以上方式联系我们。</p>
+            </div>
+            <div class="ty-about-contact-show2">
+                <div class="ty-about-share-detail-left">
+                    <a href="" class="ty-about-contact-weibo">
+                        <img src="img/about/weibo_avatar.jpeg" alt=""/>
+                    </a>
+                </div>
+                <div class="ty-about-share-detail-right">
+                    <h4 class="text-dark middle_text mr-5">@十年后官网</h4>
+                    <div class="row mt-4">
+                        <div class="col-md-4">
+                            <p class="font-weight-bold">792</p>
+                            <p class="muted-text">关注</p>
+                        </div>
+                        <div class="col-md-4">
+                            <p class="font-weight-bold">34842</p>
+                            <p class="muted-text">粉丝</p>
+                        </div>
+                        <div class="col-md-4">
+                            <p class="font-weight-bold">3318</p>
+                            <p class="muted-text">微博</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ty-about-contact-show3">
+                <a href="" class="ty-about-contact-wechat">
+                    <div class="ty-about-share-detail-left">
+                        <a href="" class="ty-about-contact-weibo">
+                            <img src="img/about/wechat_avatar%20(1).gif" alt=""/>
+                        </a>
+                    </div>
+                    <div class="ty-about-share-detail-right">
+                        <h6 class=" mr-5 mt-4">关注官方微信了解更多内容</h6>
+                        <p class="muted-text text-left"> 微信号: tenyearsme</p>
+                    </div>
+                </a>
+            </div>
+            <div class="ty-about-contact-show4">
+                <a href="" class="ty-about-contact-renren">
+                    <div class="ty-about-share-detail-left">
+                        <a href="" class="ty-about-contact-weibo">
+                            <img src="img/about/renren_avatar.jpg" alt=""/>
+                        </a>
+                    </div>
+                    <div class="ty-about-share-detail-right">
+                        <h6 class="text-left mt-3 text-dark">十年后公共主页</h6>
+                        <p class="muted-text text-left mt-3">关注者: 8737</p>
+                    </div>
+                </a>
+            </div>
+            <div class="ty-about-contact-show5">
+                <a href="" class="ty-about-contact-mail">
+                    <img src="img/about/icon_mail.png" class="mb-1 mr-1"/>&nbsp;&nbsp;
+                    <span class="text-muted mt-1">|&nbsp;&nbsp;&nbsp;talk@10years.me</span>
+                </a>
+            </div>
         </div>
     </div>
 </div>
@@ -490,6 +547,35 @@
     $(".close").click(function(){
         $(".cover")[0].style.display="none";   //隐藏遮罩层
         $("#modal6")[0].style.display="none";   //隐藏弹出层
+    })
+
+    $(".weibo").click(function(){
+        $(".ty-about-contact-show1")[0].style.opacity=0;
+        $(".ty-about-contact-show2")[0].style.opacity=1;
+        $(".ty-about-contact-show3")[0].style.opacity=0;
+        $(".ty-about-contact-show4")[0].style.opacity=0;
+        $(".ty-about-contact-show5")[0].style.opacity=0;
+    })
+    $(".wechat").click(function(){
+        $(".ty-about-contact-show1")[0].style.opacity=0;
+        $(".ty-about-contact-show2")[0].style.opacity=0;
+        $(".ty-about-contact-show3")[0].style.opacity=1;
+        $(".ty-about-contact-show4")[0].style.opacity=0;
+        $(".ty-about-contact-show5")[0].style.opacity=0;
+    })
+    $(".renren").click(function(){
+        $(".ty-about-contact-show1")[0].style.opacity=0;
+        $(".ty-about-contact-show2")[0].style.opacity=0;
+        $(".ty-about-contact-show3")[0].style.opacity=0;
+        $(".ty-about-contact-show4")[0].style.opacity=1;
+        $(".ty-about-contact-show5")[0].style.opacity=0;
+    })
+    $(".mail").click(function(){
+        $(".ty-about-contact-show1")[0].style.opacity=0;
+        $(".ty-about-contact-show2")[0].style.opacity=0;
+        $(".ty-about-contact-show3")[0].style.opacity=0;
+        $(".ty-about-contact-show4")[0].style.opacity=0;
+        $(".ty-about-contact-show5")[0].style.opacity=1;
     })
 </script>
 </body>
