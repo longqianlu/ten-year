@@ -427,7 +427,7 @@
         </div>
         <!-- 下：四个小图标内容部分-->
         <div class="d-flex justify-content-between ty-about-contact-show">
-            <div class="show ty-about-contact-show1">
+            <div class="ty-about-contact-show1">
                 <p><span class="text-dark">如</span>果你对「十年后」有任何建议，或乐意和我们交流关于未来、人生和社交网络的理念的,请通过以上方式联系我们。</p>
             </div>
             <div class="ty-about-contact-show2">
@@ -489,7 +489,37 @@
         </div>
     </div>
 </div>
+<!--页面内容第六个大图-->
+<div class="ty-about-download" id="download">
+    <!--上：大标题-->
+    <h2 class="text-center">
+        <span class="ty_color">下载移动端</span>
+        记录自己的梦想
+    </h2>
+    <div class="ty-about-download-container d-flex">
+        <div class="ty-about-download-left ">
+            <img src="img/about/ic_m_iphone.png" class="ty-about-download-iphone"/>
+            <img src="img/about/ic_m_android.png" class="ty-about-download-android"/>
+        </div>
+        <div class="ty-about-download-right">
+            <div>
+                <button></button>
+            </div>
+            <div>
+                <button></button>
+            </div>
+            <div>
+                <img src="" alt=""/>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
 <script type="text/javascript">
+    /*关于——第三个大图——给6个小模块的工作内容介绍绑定显示隐藏事件*/
     $("#open1").click(function() {
         $(".cover")[0].style.display="block";   //显示遮罩层
         $("#modal1")[0].style.display="block";   //显示弹出层
@@ -497,7 +527,7 @@
     $(".close").click(function(){
         $(".cover")[0].style.display="none";   //隐藏遮罩层
         $("#modal1")[0].style.display="none";   //隐藏弹出层
-    })
+    });
 
 
     $("#open2").click(function() {
@@ -507,7 +537,7 @@
     $(".close").click(function(){
         $(".cover")[0].style.display="none";   //隐藏遮罩层
         $("#modal2")[0].style.display="none";   //隐藏弹出层
-    })
+    });
 
 
     $("#open3").click(function() {
@@ -517,7 +547,7 @@
     $(".close").click(function(){
         $(".cover")[0].style.display="none";   //隐藏遮罩层
         $("#modal3")[0].style.display="none";   //隐藏弹出层
-    })
+    });
 
 
     $("#open4").click(function() {
@@ -527,7 +557,7 @@
     $(".close").click(function(){
         $(".cover")[0].style.display="none";   //隐藏遮罩层
         $("#modal4")[0].style.display="none";   //隐藏弹出层
-    })
+    });
 
 
     $("#open5").click(function() {
@@ -537,7 +567,7 @@
     $(".close").click(function(){
         $(".cover")[0].style.display="none";   //隐藏遮罩层
         $("#modal5")[0].style.display="none";   //隐藏弹出层
-    })
+    });
 
 
     $("#open6").click(function() {
@@ -547,36 +577,27 @@
     $(".close").click(function(){
         $(".cover")[0].style.display="none";   //隐藏遮罩层
         $("#modal6")[0].style.display="none";   //隐藏弹出层
-    })
+    });
 
-    $(".weibo").click(function(){
-        $(".ty-about-contact-show1")[0].style.opacity=0;
-        $(".ty-about-contact-show2")[0].style.opacity=1;
-        $(".ty-about-contact-show3")[0].style.opacity=0;
-        $(".ty-about-contact-show4")[0].style.opacity=0;
-        $(".ty-about-contact-show5")[0].style.opacity=0;
-    })
-    $(".wechat").click(function(){
-        $(".ty-about-contact-show1")[0].style.opacity=0;
-        $(".ty-about-contact-show2")[0].style.opacity=0;
-        $(".ty-about-contact-show3")[0].style.opacity=1;
-        $(".ty-about-contact-show4")[0].style.opacity=0;
-        $(".ty-about-contact-show5")[0].style.opacity=0;
-    })
-    $(".renren").click(function(){
-        $(".ty-about-contact-show1")[0].style.opacity=0;
-        $(".ty-about-contact-show2")[0].style.opacity=0;
-        $(".ty-about-contact-show3")[0].style.opacity=0;
-        $(".ty-about-contact-show4")[0].style.opacity=1;
-        $(".ty-about-contact-show5")[0].style.opacity=0;
-    })
-    $(".mail").click(function(){
-        $(".ty-about-contact-show1")[0].style.opacity=0;
-        $(".ty-about-contact-show2")[0].style.opacity=0;
-        $(".ty-about-contact-show3")[0].style.opacity=0;
-        $(".ty-about-contact-show4")[0].style.opacity=0;
-        $(".ty-about-contact-show5")[0].style.opacity=1;
-    })
+
+
+    /*关于——第五个大图——给四个小图标绑定显示隐藏事件*/
+    $(".ty-about-contact-show>div~div").hide();
+    $(".ty-about-share a").on("click",function(){
+        $(".ty-about-contact-show div").show();
+    });
+    $(".weibo").on("click",function(){
+        $(".ty-about-contact-show2").siblings().hide();
+    });
+    $(".wechat").on("click",function(){
+        $(".ty-about-contact-show3").siblings().hide();
+    });
+    $(".renren").on("click",function(){
+        $(".ty-about-contact-show4").siblings().hide();
+    });
+    $(".mail").on("click",function(){
+        $(".ty-about-contact-show5").siblings().hide();
+    });
 </script>
 </body>
 
