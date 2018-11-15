@@ -474,6 +474,7 @@ body{
     position:relative;
     top:400px;
     height:550px;
+    border-top:2px solid #eee;
     background:url(../img/about/ic_about_contact.png) center/80% no-repeat;
 }
 
@@ -576,18 +577,12 @@ body{
 /*4个图标所隐藏的商品介绍*/
 .ty-about-contact-show>div{
     color:#777;
-    opacity: 0;
     transition: all .4s ease-in-out;
     position: absolute;
     width: 540px;
     text-align: center;
     padding:40px 20px;
     box-shadow:0 0 3px 3px #eee;
-}
-
-/*商品介绍未隐藏的模块*/
-.ty-about-contact-show .show{
-    opacity: 1;
 }
 
 /*未隐藏模块的内容*/
@@ -776,7 +771,62 @@ body{
     transition: all .4s ease-in-out;
 }
 
-/*显示的模块*/
-.ty-about-contact-show1::before{
 
+
+
+/*页面第六个大图*/
+.ty-about-download{
+    position:relative;
+    top:360px;
+    width:100%;
+    height:560px;
+    border-bottom:2px solid #00b4ff;
+    border-top:2px solid #eee;
 }
+
+/*上：页面大标题*/
+.ty-about-download>h2{
+    padding-top: 60px;
+}
+
+
+/*下：页面主要内容*/
+.ty-about-download-container{
+    position: relative;
+    width:700px;
+    height:438px;
+    margin:0 auto;
+    overflow: hidden;
+    z-index: -1;
+}
+
+/*下：左和右*/
+.ty-about-download-left{
+    position:absolute;
+    width:400px;
+    left:0;
+    top:0;
+}
+
+.ty-about-download-right{
+    padding-left: 450px;
+}
+
+/*下：左——两个手机图片*/
+.ty-about-download-iphone{
+    position:absolute;
+    top:60px;
+    width:220px;
+    height:430px;
+}
+
+.ty-about-download-android{
+    position:absolute;
+    top:100px;
+    left:150px;
+    z-index: -1;
+    width:250px;
+    height:485px;
+}
+
+/*下：右——两个标签和二维码*/
