@@ -86,8 +86,8 @@
     </h2>
     <!--中：投简历邮箱链接-->
     <p>简历投递邮箱</p>
-    <p>
-        <a href="" class="text-white ty-about-job-email">[ join@10years.me ]</a>
+    <p class="under">
+        <a class="text-white ty-about-job-email">[ join@10years.me ]</a>
         <span class="ty-about-job-under"></span>
     </p>
     <!--下：6个工作详情模块-->
@@ -496,26 +496,143 @@
         <span class="ty_color">下载移动端</span>
         记录自己的梦想
     </h2>
+    <!--下：主要内容-->
     <div class="ty-about-download-container d-flex">
+        <!--下：左——两个手机图片-->
         <div class="ty-about-download-left ">
             <img src="img/about/ic_m_iphone.png" class="ty-about-download-iphone"/>
             <img src="img/about/ic_m_android.png" class="ty-about-download-android"/>
         </div>
+        <!--下：右——两个下载按钮和二维码-->
         <div class="ty-about-download-right">
+            <!--上：iphone按钮-->
             <div>
-                <button></button>
+                <a class="iphone_btn">
+                    <img src="img/about/iphone_btn" alt=""/>
+                    iphone 版</a>
             </div>
+            <!--中：Android按钮-->
             <div>
-                <button></button>
+                <a id="btn1" class="android_btn mt-3">
+                    <img src="img/about/android_btn.gif" alt=""/>Android 版
+                </a>
+                <ul class="list-unstyled d-none" id="target">
+                    <li>应用宝</li>
+                    <li>本地下载</li>
+                </ul>
             </div>
+            <!--下：二维码图片-->
             <div>
-                <img src="" alt=""/>
+                <img src="img/about/download_qrcode.png" alt=""/>
             </div>
         </div>
     </div>
 </div>
 
-
+<footer>
+    <div class="footer-list bg-dark">
+        <!--列表内容-->
+        <div class="list-content row">
+            <!--第一列：logo-->
+            <div class="col-md-3 text-muted small_text mt-4">
+                <ul class="list-unstyled">
+                    <li class="text-left">
+                        <img src="./img/index/logo_login.png" class="img-logo "/>
+                    </li>
+                    <li class="mt-3">
+                        <p class="text-left">与世界分享你的追梦历程</p>
+                    </li>
+                    <li>
+                        <p class="text-left">「十年后」是一个基于梦想的经验交流社区，在这里，你可以自由的分享关于未来梦想的真实想法，并探索更多有趣的梦想，结交志同道合的人。</p>
+                    </li>
+                </ul>
+            </div>
+            <!--第二列：关于我们-->
+            <div class="col-md-3 mt-4">
+                <div class="text-white list-text">关于我们</div>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="" class="small_text text-muted">关于十年后</a>
+                    </li>
+                    <li>
+                        <a href="" class="small_text text-muted">团队成员</a>
+                    </li>
+                    <li>
+                        <a href="" class="small_text text-muted">加入我们</a>
+                    </li>
+                    <li>
+                        <a href="" class="small_text text-muted">用户协议</a>
+                    </li>
+                    <li>
+                        <a href="" class="small_text text-muted">回到旧版</a>
+                    </li>
+                </ul>
+            </div>
+            <!--第三列：媒体报道-->
+            <div class="col-md-3 mt-4">
+                <div class="text-white list-text">媒体报道</div>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="" class="text-muted small_text">PingWest</a>
+                    </li>
+                    <li>
+                        <a href="" class="small_text text-muted">动点科技</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-muted small_text">IT桔子</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-muted small_text">创业邦</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-muted small_text">i黑马</a>
+                    </li>
+                </ul>
+            </div>
+            <!--第四列：下载应用-->
+            <div class="col-md-3 mt-4">
+                <div class="text-white list-text">下载应用</div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="border ty_color icon-size mt-3">
+                            <a href="">
+                                <img src="img/index/IMG_4334.jpg" alt="" class=""/>
+                                <span class="ty_color">IOS&nbsp;版</span>
+                            </a>
+                        </div>
+                        <div class="border ty_color icon-size mt-3">
+                            <a href="">
+                                <img src="img/index/IMG_4335%20.JPG" alt="" class=""/>
+                                <span class="ty_color">Android&nbsp;</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-3">
+                        <img src="img/index/qrcode.png" alt="" class="erweima"/>
+                    </div>
+                </div>
+            </div>
+            <!--版权-->
+            <div class="list-ft-img mt-3 small_text text-muted">
+                <p>
+                    <span><a href="" class="text-muted">© 2013 - 2015 10years.me.</a></span>
+                    <span>上海秦誓网络科技有限公司 All Rights Reserved.</span>
+                    <span>
+                        <a href="" class="text-muted">沪ICP备13021804号</a>
+                    </span>
+                </p>
+            </div>
+            <div class="list-ft-img">
+                <a href="">
+                    <img src="img/index/90X45.png" alt=""/>
+                </a>
+                <a href="">
+                    <img src="img/index/badge2xblue.png" alt="" class="w-25"/>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
 
 
 <script type="text/javascript">
@@ -582,21 +699,26 @@
 
 
     /*关于——第五个大图——给四个小图标绑定显示隐藏事件*/
-    $(".ty-about-contact-show>div~div").hide();
+    $(".ty-about-contact-show>div:gt(0)").hide();
     $(".ty-about-share a").on("click",function(){
         $(".ty-about-contact-show div").show();
     });
-    $(".weibo").on("click",function(){
+    $(".weibo").click(function(){
         $(".ty-about-contact-show2").siblings().hide();
     });
-    $(".wechat").on("click",function(){
+    $(".wechat").click(function(){
         $(".ty-about-contact-show3").siblings().hide();
     });
-    $(".renren").on("click",function(){
+    $(".renren").click(function(){
         $(".ty-about-contact-show4").siblings().hide();
     });
-    $(".mail").on("click",function(){
+    $(".mail").click(function(){
         $(".ty-about-contact-show5").siblings().hide();
+    });
+
+    $("#btn1").hover(function(){
+        var $tar=$("#target");
+        $tar.slideToggle();
     });
 </script>
 </body>
