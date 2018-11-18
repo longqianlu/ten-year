@@ -265,6 +265,11 @@ body{
     z-index: 99999;
 }
 
+.under{
+    cursor:pointer;
+    color:white;
+}
+
 .ty-about-job p a{
     text-decoration: none;
 }
@@ -273,18 +278,17 @@ body{
 .ty-about-job-under{
     position: absolute;
     width:0;
-    height:5px;
-    background-color:red;
+    height:1px;
+    background-color:#eee;
     bottom:-5px;
     left:0;
     transition:0.5s;
     margin-left:50%;
-    display: block;
 }
 
-.ty-about-job-email:hover .ty-about-job-under{
-    width:100%;
-    margin-left:0;
+.under:hover .ty-about-job-under{
+    width:140px;
+    margin-left:43.5%;
 }
 /*页面主要内容*/
 .ty-about-job-container{
@@ -829,4 +833,134 @@ body{
     height:485px;
 }
 
-/*下：右——两个标签和二维码*/
+/*下：右——两个按钮和二维码*/
+.ty-about-download-right a{
+    position:relative;
+    top:60px;
+    width:162px;
+    height:52px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    transition: all .3s;
+    background:#fff;
+    display: block;
+}
+
+/*/!*上——两个按钮图片*!/*/
+.iphone_btn>img{
+    width:25px;
+    height:25px;
+}
+
+.android_btn>img{
+    width:40px;
+    height:35px;
+}
+
+
+/*/!*按钮字体颜色*!/*/
+.ty-about-download-right a{
+    color:#777;
+    font-size: 18px;
+    line-height: 38px;
+}
+
+/*中——隐藏的下拉菜单*/
+.ty-about-download-right ul{
+    position: absolute;
+    bottom:134px;
+    right:88px;
+    transition: height .4s ease-in-out;
+    text-align: center;
+    border:1px solid #ddd;
+    border-top:0
+}
+
+.ty-about-download-right ul li{
+    color:#333;
+    width:160px;
+    height:50px;
+    line-height: 40px;
+    font-size: 13px;
+}
+
+.ty-about-download-right ul li:hover{
+    background:#f2f2f2;
+}
+
+/*下——二维码*/
+.ty-about-download-right div:nth-child(3)>img{
+    width:160px;
+    height:160px;
+    margin-top: 80px;
+}
+
+
+
+
+/*底部：列表*/
+/*logo图片*/
+.img-logo {
+    width: 135px;
+    height: 36px;
+    margin-left: 10px;
+}
+.footer-list{
+    width:100%;
+    height:100%;
+    position:relative;
+    top:360px;
+    text-align: center;
+}
+/*列表模块*/
+.list-content{
+    width:70%;
+    height:100%;
+    margin:0 auto;
+}
+
+.list-content ul li a{
+    text-decoration: none;
+}
+
+.list-content ul li a:hover{
+    color:#eee !important;
+}
+
+.list-content div~div ul li{
+    line-height: 1.5;
+}
+
+.list-content div:first-child ul li p{
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+/*下载应用样式*/
+.icon-size{
+    border-color:#55D4FD !important;
+    width:6rem;
+    height:2.5rem;
+    line-height: 2.5rem;
+    border-radius: 5px;
+}
+/*下载链接图片大小*/
+.icon-size img{
+    width:30px;
+    height:30px;
+}
+/*下载应用二维码大小*/
+.erweima{
+    width:120px;
+    height:120px;
+    margin-left:30px;
+}
+/*最下面图片链接*/
+.list-ft-img{
+    width:70%;
+    margin: 0 auto 8px;
+}
+.list-ft-img img{
+    width:100px;
+    height:50px;
+}
