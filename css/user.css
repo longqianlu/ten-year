@@ -1,9 +1,248 @@
 body{
-    position:relative;
     z-index: 1;
     line-height: 1;
     margin: 0;
     padding:0;
     width:100%;
+    background: #fff;
+}
+
+/*透明的导航栏*/
+.ty-nav{
+    background-color:transparent !important;
+    transition:background .5s;
+    box-shadow: none;
+}
+
+/*头部个人简介*/
+#ty-profile{
+    position:relative;
+    width:100%;
+    height:690px;
+    background:center 0 no-repeat;
+    background-size: cover;
+}
+
+/*上：背景图和透明度*/
+.ty-profile-bg,.ty-profile-motto{
+    position: absolute;
+    width:100%;
+    height:550px;
+    margin-top: -50px;
+}
+
+/*背景*/
+.ty-profile-bg{
+    background-image: url(../img/users/4629/2015920946294091!ll.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/*透明度*/
+.ty-profile-motto{
+    text-align: center;
+    z-index: 10;
+    transform: translate3d(0px,0px,0px);
+}
+
+/*背景图上面的内容*/
+.ty-profile-motto-content{
+    display: inline-block;
+    font-size: 25px;
+    position: relative;
+    top: 50%;
+    color: rgba(255,255,255,.6);
+    padding: 2px;
+    border-bottom: 1px solid transparent;
+    text-align: justify;
+    letter-spacing: 3px;
+    line-height: 1.4;
+    max-width: 600px;
+}
+
+/*个人简介*/
+.ty-personal-profile{
+    position: absolute;
+    width: 100%;
+    bottom: 48px;
+    z-index: 20;
+    border-bottom: 1px solid #eee;
+}
+
+/*个人简历——头像*/
+.ty-profile-avatar{
+    position: relative;
+    font-size: 13px;
+    width: 100%;
+    top:-75px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.ty-profile-avatar-content{
+    height: 74px;
+    width: 74px;
+    position: absolute;
+    left:50%;
+    margin-left: -37px;
+}
+
+.ty-personal-image{
+    position: absolute;
+    left:50%;
+    margin-left:-37px;
+    width: 74px;
+    height: 74px;
+    border: 2px solid rgba(255,255,255,.8);
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.ty-personal-image img{
+    width:74px;
+    height:74px;
+}
+
+/*个人简介——个人资料*/
+.ty-profile-content-row{
+    font-size: 13px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 1px;
+    min-height: 22px;
+    padding:10px 0;
+}
+
+/*用户名*/
+#ty-profile-username{
+    font-size: 24px;
+    height:26px;
+}
+
+/*右侧关注按钮*/
+.ty-profile-modify-content+span{
+    position: absolute;
+    right:40px;
+    top:-10px;
+}
+
+.ty-profile-modify-content+span>a{
+    text-decoration: none;
+    display: inline-block;
+    color: #666;
+    border: 1px solid #ddd;
     background: #f4f4f4;
+    font-size: 13px;
+    padding: 10px 18px;
+    border-radius: 4px;
+    margin: 0 3px;
+    overflow: hidden;
+    transition: all .3s;
+}
+
+.ty-profile-modify-content+span>a:hover{
+    color:#00b4ff;
+}
+
+
+/*动态数量*/
+.ty-profile-count{
+    width: 100%;
+    bottom: 0;
+    height: 48px;
+    z-index: 11;
+    border-top: 1px solid #ccc;
+    color: #333;
+    left: 0;
+    position: absolute;
+}
+
+.ty-profile-count ul{
+    width: 560px;
+    height:40px;
+    margin: 8px auto;
+    font-size: 13px;
+    text-align: center;
+}
+
+.ty-profile-count>ul>li p:nth-child(1){
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    padding:5px 0;
+}
+
+.ty-profile-count>ul>li p:nth-child(2){
+    color:#999;
+}
+
+
+/*时间轴*/
+#ty-timeline{
+    position: relative;
+    top:10px;
+    bottom:300px;
+    cursor: move;
+    height: 180px;
+    width: 100%;
+}
+.timeline-bg{
+    width:100%;
+    height:170px;
+    background-image: -webkit-gradient(linear,0 0,100% 0,from(#3bb1dd),to(#fec454));
+}
+.ty-story{
+    position:absolute;
+    top:0;
+    width:3800px;
+    height:200px;
+    background-color: rgba(0,200,0,0.1);
+    transition:width .5s;
+}
+.ty-story ul{
+    height:200px;
+    margin-top:0;
+    margin-left:30px;
+}
+.ty-story ul li{
+    float:left;
+    height:100%;
+}
+.ty-story ul li div{
+    width:200px;
+    height:100%;
+}
+.ty-story ul li div p:not(:last-child){
+    position: relative;
+    left:95px;
+    width:1px;
+    height:170px;
+    background: #ddd;
+}
+
+.ty-story ul li span{
+    width:160px;
+    height:50px;
+    position: absolute;
+    top:10px;
+    line-height:50px;
+}
+
+/*时间刻度表*/
+.ty-story ul li div p:last-child{
+    height:30px;
+    width:50px;
+}
+
+
+.pl-bg-pink{
+    background:url(../img/users/4629/dream_fail.png);
+    background-position: center center;
+    background-size:cover ;
+}
+
+.pl-bg-green{
+    background:url(../img/users/4629/dream_success.png);
 }
