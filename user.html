@@ -11,6 +11,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/vue.js"></script>
 </head>
 <body>
 <div class="ty_nav">
@@ -107,51 +108,203 @@
             </ul>
         </div>
     </div>
-    <div id="ty-timeline" class="ty-story">
-        <ul class="list-unstyled d-flex justify-content-">
-            <li>
-                <p></p>
-                <span>成为最理想的自己</span>
-            </li>
-            <li>
-                <p></p>
-                <span>20岁的女生</span>
-            </li>
-            <li>
-                <p></p>
-                <span>IELT&GRE</span>
-            </li>
-            <li>
-                <p></p>
-                <span>科研项目</span>
-            </li>
-            <li>
-                <p></p>
-                <span>交换生OR游学</span>
-            </li>
-            <li>
-                <p></p>
-                <span>#21天习惯养成挑战#</span>
-            </li>
-            <li>
-                <p></p>
-                <span>向着北方</span>
-            </li>
-            <li>
-                <p></p>
-                <span>『国二』=『过儿』</span>
-            </li>
-            <li>
-                <p></p>
-                <span>摔打自己</span>
-            </li>
-            <li><span></span><span></span></li>
-            <li><span></span><span></span></li>
-            <li><span></span><span></span></li>
-            <li><span></span><span></span></li>
-            <li><span></span><span></span></li>
-        </ul>
+    <div id="ty-timeline">
+        <div class="timeline-bg"></div>
+        <div class="ty-story" id="ty-story" onmousedown="ty_down(event)">
+            <ul class="list-unstyled small_text text-center">
+                <li>
+                    <div>
+                        <p></p>
+                        <span class="ml-0 pl-bg-pink">成为最理想的自己</span>
+                        <p>2015</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p></p>
+                        <p>2016</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p></p>
+                        <span class="text-dark">IELT&GRE</span>
+                        <span class="mt-5">20岁的女生</span>
+                        <p>2017</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p></p>
+                        <span>科研项目</span>
+                        <span>『国二』=『过儿』</span>
+                        <p>2018</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p></p>
+                        <span>交换生OR游学</span>
+                        <span>向着北方</span>
+                        <p>2019</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p></p>
+                        <span>#21天习惯养成挑战#</span>
+                        <p>2020</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p></p>
+                        <p>2021</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p></p>
+                        <p>2022</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p></p>
+                        <span class="ml-0 pl-bg-pink">成为最理想的自己</span>
+                        <p>2015</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p></p>
+                        <p>2016</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p></p>
+                        <span class="text-dark">IELT&GRE</span>
+                        <span class="mt-5">20岁的女生</span>
+                        <p>2017</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p></p>
+                        <span>科研项目</span>
+                        <span>『国二』=『过儿』</span>
+                        <p>2018</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p></p>
+                        <span>交换生OR游学</span>
+                        <span>向着北方</span>
+                        <p>2019</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p></p>
+                        <span>#21天习惯养成挑战#</span>
+                        <p>2020</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p></p>
+                        <p>2021</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p></p>
+                        <p>2022</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p></p>
+                        <span class="ml-0 pl-bg-pink">成为最理想的自己</span>
+                        <p>2015</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p></p>
+                        <p>2016</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p></p>
+                        <span class="text-dark">IELT&GRE</span>
+                        <span class="mt-5">20岁的女生</span>
+                        <p>2017</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p></p>
+                        <span>科研项目</span>
+                        <span>『国二』=『过儿』</span>
+                        <p>2018</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p></p>
+                        <span>交换生OR游学</span>
+                        <span>向着北方</span>
+                        <p>2019</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p></p>
+                        <span>#21天习惯养成挑战#</span>
+                        <p>2020</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p></p>
+                        <p>2021</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p></p>
+                        <p>2022</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
+<script language="javascript">
+    function ty_down(e){
+        var obig=document.getElementById("ty-timeline");
+        var osmall=document.getElementById("ty-story");
+        var e=e || window.event;
+        osmall.startX= e.clientX - osmall.offsetLeft;
+        document.onmousemove=function(e){
+            var e=e || window.event;
+            osmall.style.left= e.clientX-osmall.startX+"px";
+            if(e.clientX-osmall.startX<=0){
+                osmall.style.left=0+"px";
+            }
+            if(e.clientX-osmall.startX>=3000){
+                osmall.style.left=3000+"px";
+            }
+        };
+        document.onmouseup=function(){
+            document.onmousemove=null;
+            document.onmouseup=null;
+        }
+    }
+</script>
 </body>
 </html>
