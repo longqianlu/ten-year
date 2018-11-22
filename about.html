@@ -10,6 +10,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/header.js"></script>
     <style>
     </style>
 </head>
@@ -87,7 +88,7 @@
     <!--中：投简历邮箱链接-->
     <p>简历投递邮箱</p>
     <p class="under">
-        <a class="text-white ty-about-job-email">[ join@10years.me ]</a>
+        <a href="javascript:;" class="text-white ty-about-job-email">[ join@10years.me ]</a>
         <span class="ty-about-job-under"></span>
     </p>
     <!--下：6个工作详情模块-->
@@ -342,7 +343,7 @@
         <div class="ty-about-report-carousel carousel" id="slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active ty-about-report-slide float-left">
-                    <a href="#">
+                    <a href="">
                         <img src="img/about/ic_logo_pw.png" alt=""/>
                     </a>
                     <h3>
@@ -353,7 +354,7 @@
                     </p>
                 </div>
                 <div class="carousel-item ty-about-report-slide float-left">
-                    <a href="#">
+                    <a href="">
                         <img src="img/about/ic_logo_technode.png" alt=""/>
                     </a>
                     <h3>
@@ -364,7 +365,7 @@
                     </p>
                 </div>
                 <div class="carousel-item ty-about-report-slide float-left">
-                    <a href="#">
+                    <a href="">
                         <img src="img/about/ic_logo_itjuzi.png" alt=""/>
                     </a>
                     <h3>
@@ -375,7 +376,7 @@
                     </p>
                 </div>
                 <div class="carousel-item ty-about-report-slide float-left">
-                    <a href="#">
+                    <a href="">
                         <img src="img/about/ic_logo_cyzone.png" alt=""/>
                     </a>
                     <h3>
@@ -386,7 +387,7 @@
                     </p>
                 </div>
                 <div class="carousel-item ty-about-report-slide float-left">
-                    <a href="#">
+                    <a href="">
                         <img src="img/about/ic_logo_iheima.png" alt=""/>
                     </a>
                     <h3>
@@ -417,13 +418,13 @@
     <div class="ty-about-contact-container">
         <!--中：四个小图标-->
         <div class="ty-about-share d-flex justify-content-around">
-            <a class="weibo" ></a>
+            <a href="javascript:;" class="weibo" ></a>
 
-            <a class="wechat" ></a>
+            <a href="javascript:;" class="wechat" ></a>
 
-            <a class="renren"></a>
+            <a href="javascript:;" class="renren"></a>
 
-            <a class="mail" ></a>
+            <a href="javascript:;" class="mail" ></a>
         </div>
         <!-- 下：四个小图标内容部分-->
         <div class="d-flex justify-content-between ty-about-contact-show">
@@ -507,19 +508,19 @@
         <div class="ty-about-download-right">
             <!--上：iphone按钮-->
             <div>
-                <a class="iphone_btn">
+                <a href="javascript:;" class="iphone_btn">
                     <img src="img/about/iphone_btn" alt=""/>
                     iphone 版</a>
             </div>
             <!--中：Android按钮-->
-            <div>
-                <a id="btn1" class="android_btn mt-3">
+            <div class="ty-dropdown">
+                <a href="javascript:;" class="android_btn mt-3">
                     <img src="img/about/android_btn.gif" alt=""/>Android 版
                 </a>
-                <ul class="list-unstyled d-none" id="target">
-                    <li>应用宝</li>
-                    <li>本地下载</li>
-                </ul>
+                <div class=" ty-dropdown-menu text-center">
+                    <div><a href="javascript:;">应用宝</a></div>
+                    <div><a href="javascript:;">本地下载</a></div>
+                </div>
             </div>
             <!--下：二维码图片-->
             <div>
@@ -716,10 +717,6 @@
         $(".ty-about-contact-show5").siblings().hide();
     });
 
-    $("#btn1").hover(function(){
-        var $tar=$("#target");
-        $tar.slideToggle();
-    });
 </script>
 </body>
 
