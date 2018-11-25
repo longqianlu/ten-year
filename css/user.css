@@ -6,6 +6,9 @@ body{
     width:100%;
     background: #fff;
 }
+a{
+    text-decoration: none !important;
+}
 
 /*透明的导航栏*/
 .ty-nav{
@@ -185,35 +188,53 @@ body{
     top:10px;
     bottom:300px;
     cursor: move;
-    height: 180px;
+    height: 200px;
     width: 100%;
 }
+
+/*底层背景色*/
 .timeline-bg{
     width:100%;
     height:170px;
     background-image: -webkit-gradient(linear,0 0,100% 0,from(#3bb1dd),to(#fec454));
 }
+
+.timeline-parent{
+    width:100%;
+    height:200px;
+    overflow: hidden;
+}
+
+
+/*可拖动的滚动块*/
 .ty-story{
     position:absolute;
     top:0;
     width:3800px;
-    height:200px;
+    height:220px;
     background-color: rgba(0,200,0,0.1);
     transition:width .5s;
+    overflow: hidden;
 }
+
+
+/*滚动块里的文字内容*/
 .ty-story ul{
     height:200px;
     margin-top:0;
     margin-left:30px;
 }
+
 .ty-story ul li{
     float:left;
     height:100%;
 }
+
 .ty-story ul li div{
     width:200px;
     height:100%;
 }
+
 .ty-story ul li div p:not(:last-child){
     position: relative;
     left:95px;
@@ -236,7 +257,7 @@ body{
     width:50px;
 }
 
-
+/*语言色块*/
 .pl-bg-pink{
     background:url(../img/users/4629/dream_fail.png);
     background-position: center center;
@@ -245,4 +266,217 @@ body{
 
 .pl-bg-green{
     background:url(../img/users/4629/dream_success.png);
+}
+
+
+/*下：记录梦想内容模块*/
+#ty-profile-dream{
+    position:relative;
+    width:100%;
+    height:500px;
+    background-color: #f4f4f4;
+}
+
+.ty-dream-content{
+    width:960px;
+    height:100%;
+    margin:30px auto 0 ;
+}
+
+/*左：记录计划*/
+.ty-dream-left{
+    margin-top: 30px;
+    margin-right:45px;
+    max-width: 62%;
+}
+
+/*左：导航*/
+.ty-dream-tab{
+    height:40px;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.07);
+    background-color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    color:#757575;
+    cursor: pointer;
+}
+
+.ty-dream-tab>div:hover{
+    color:#00b4ff;
+    transition: all .3s;
+}
+
+/*左：主要内容*/
+.ty-dream-container{
+    height:100%;
+    border-radius: 5px;
+}
+
+/*动态想法*/
+.ty-feed-item{
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.ty-feed-item,.ty-feed-body,.ty-feed-content,.ty-reply-body{
+    font-size: 14px;
+    line-height: 1.7;
+    word-break: break-all;
+    text-align: justify;
+    color: #333;
+    margin-top: 10px;
+}
+
+/*动态头部*/
+.ty-feed-header{
+    padding:10px 20px;
+}
+
+/*头部a标签样式*/
+.ty-feed-header div a{
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/*头部：左——用户名和头像*/
+.ty-feed-user a{
+    color:#4093c6
+}
+
+.ty-user-avatar a{
+    display: block;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.ty-user-avatar{
+    width: 38px;
+    height: 38px;
+    float: left;
+    margin: 5px 8px 5px 0;
+}
+.ty-user-avatar a img{
+    height:100%;
+    width:100%;
+}
+
+
+/*头部：右——标签*/
+.ty-feed-dream a{
+    border:1px solid #ddd;
+    color: #2ecc71;
+    border-radius: 20px;
+    padding:9px 12px 8px 15px
+}
+
+.ty-feed-dream a:hover{
+    border:1px solid #2ecc71;
+    transition: all .3s ease-in-out;
+}
+
+/*想法主体*/
+.ty-feed-body{
+    display: block;
+   /* overflow: hidden;*/
+    position: relative;
+    padding: 0 20px 15px;
+    margin-top: 10px;
+    border-bottom: 2px solid #f6f5f6;
+}
+
+/*想法底部*/
+.ty-feed-footer{
+    height: 40px;
+    position: relative;
+    z-index:2;
+    padding:0 10px;
+}
+
+.ty-feed-footer div a{
+    text-decoration: none;
+    color:#aaa;
+    display: block;
+    height: 100%;
+    padding-left: 30px;
+    padding-right: 10px;
+    position: relative;
+    margin: 0 5px;
+    line-height: 38px;
+    text-align: center;
+}
+
+.ty-feed-footer div a:hover{
+    color:#888;
+    transition: all .3s ease-in-out;
+}
+
+.ty-like{
+    margin-top:8px;
+    color:#777;
+}
+
+/*最底部隐藏块——想法互动*/
+.ty-feed-operation{
+    border-top:2px solid #f6f5f6;
+    padding: 0 20px;
+    border-bottom:1px solid #f6f5f6;
+}
+
+.ty-feed-like div:first-child a{
+    margin:10px 20px 0;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color:#aaa;
+    font-size: 20px;
+    line-height: 55px;
+}
+
+.ty-user-like{
+    width:32px;
+    height:32px;
+}
+
+.ty-user-like a{
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+    width:100%;
+    height:100%;
+    margin:10px  0;
+}
+
+.ty-user-like a img{
+    width:100%;
+    height:100%;
+}
+
+/*评论区*/
+.ty-feed-reply{
+    padding: 5px 20px;
+}
+
+.ty-feed-reply-user{
+    border-bottom: 1px solid #f6f5f6;
+    padding: 10px 0;
+}
+
+.ty-reply-body{
+    margin-left: 43px;
+}
+
+
+
+
+
+
+
+
+
+/*右：梦想信息*/
+.ty-dream-right{
+    max-width:33%;
+    margin-top: 30px;
 }
