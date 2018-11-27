@@ -201,7 +201,6 @@ a{
 
 .timeline-parent{
     width:100%;
-    height:200px;
     overflow: hidden;
 }
 
@@ -227,12 +226,10 @@ a{
 
 .ty-story ul li{
     float:left;
-    height:100%;
 }
 
 .ty-story ul li div{
     width:200px;
-    height:100%;
 }
 
 .ty-story ul li div p:not(:last-child){
@@ -273,13 +270,11 @@ a{
 #ty-profile-dream{
     position:relative;
     width:100%;
-    height:500px;
     background-color: #f4f4f4;
 }
 
 .ty-dream-content{
     width:960px;
-    height:100%;
     margin:30px auto 0 ;
 }
 
@@ -310,7 +305,6 @@ a{
 
 /*左：主要内容*/
 .ty-dream-container{
-    height:100%;
     border-radius: 5px;
 }
 
@@ -391,7 +385,7 @@ a{
 .ty-feed-footer{
     height: 40px;
     position: relative;
-    z-index:2;
+    /*z-index:2;*/
     padding:0 10px;
 }
 
@@ -420,13 +414,13 @@ a{
 
 /*最底部隐藏块——想法互动*/
 .ty-feed-operation{
+    width:90%;
+    margin:0 auto;
     border-top:2px solid #f6f5f6;
-    padding: 0 20px;
-    border-bottom:1px solid #f6f5f6;
 }
 
 .ty-feed-like div:first-child a{
-    margin:10px 20px 0;
+    margin:10px 15px 0;
     padding-bottom: 10px;
     text-decoration: none;
     color:#aaa;
@@ -455,11 +449,11 @@ a{
 
 /*评论区*/
 .ty-feed-reply{
-    padding: 5px 20px;
+    border-bottom: 1px solid #f6f5f6;
 }
 
 .ty-feed-reply-user{
-    border-bottom: 1px solid #f6f5f6;
+    border-top: 1px solid #f6f5f6;
     padding: 10px 0;
 }
 
@@ -467,16 +461,160 @@ a{
     margin-left: 43px;
 }
 
-
-
-
-
-
-
+/*评论框*/
+.ty-reply-feed input{
+    width:100%;
+    height:33px;
+    background-color: #F4F4F4;
+    border-radius: 5px;
+    border:0;
+    margin-bottom: 30px;
+}
 
 
 /*右：梦想信息*/
 .ty-dream-right{
     max-width:33%;
     margin-top: 30px;
+}
+
+/*将来要替换的用户信息*/
+.ty-dream-info{
+    width: 100%;
+    background: #fff;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 1px 2px rgba(0,0,0,.07);
+}
+
+/*标题*/
+.ty-info-title{
+    line-height: 14px;
+    font-size: 14px;
+    color: #666;
+    border-bottom: 2px solid #f6f5f6;
+    padding: 14px;
+    position: relative;
+}
+
+/*每行用户信息*/
+.ty-info-row{
+    width: 100%;
+    height: auto;
+    min-height: 35px;
+    overflow: hidden;
+    line-height: 40px;
+    border-bottom: 1px solid #f1f1f1;
+    position: relative;
+}
+
+/*用户信息背景图*/
+.ty-info-bg{
+    display: block;
+    border-radius: 5px;
+    background: center/cover no-repeat;
+    overflow: hidden;
+    margin: 15px;
+    height: 140px;
+    position: relative;
+}
+
+/*用户信息名称和内容*/
+.ty-info-name{
+    color: #999;
+    vertical-align: middle;
+    width: 70px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.ty-info-text {
+    font-size: 13px;
+    min-height: 24px;
+    padding-top: 3px;
+    color: #444;
+    line-height: 34px;
+    width: 210px;
+}
+
+.card-status{
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 24px;
+    font-size: 13px;
+    font-weight: 700;
+    display: inline-block;
+    color:#fff;
+}
+
+.ty-add{
+    display: inline-block;
+    width: 54px;
+    height: 26px;
+    border-radius: 20px;
+    background: #ddd;
+    position: relative;
+    cursor: pointer;
+    top:5px;
+    transition: background .5s ease-in-out;
+}
+
+.ty-add>span{
+    width:20px;
+    height:20px;
+    position: absolute;
+    display: block;
+    top:3px;
+    left:3px;
+    background-color:#fff;
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.2)
+}
+
+.ty-add-desc>span{
+    color: #999;
+    font-size: 14px;
+    position: absolute;
+    left: 140px;
+    opacity:0 ;
+    top: 2px;
+    transition: opacity .6s ease-in-out;
+}
+
+.ty-add-desc>.unchecked{
+    opacity: 1;
+}
+
+.ty-info-text>span{
+
+}
+
+/*底部*/
+.ty-app-footer{
+    width:100%;
+}
+.ty-app-download{
+    width:100%;
+}
+.ty-app-download a img{
+    width:100%;
+    height: auto;
+}
+
+.ty-app-footer-down,.ty-app-footer-down a{
+    font-size: 12px;
+    color: #999;
+    margin: 12px 0;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.ty-app-footer-down a:hover{
+    color:#666;
+    transition: all .3s ease-in-out;
 }
